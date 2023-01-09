@@ -43,7 +43,7 @@ function HeroSection() {
           ))}
         </Container>
       </Certified>
-      <ScrollDown className="mobile__mt-62">
+      <ScrollDown className="mobile__mt-62 basic-animate-3">
         <Button className="btn-scroll-down">
           <ArrowDown /> Scroll down
         </Button>
