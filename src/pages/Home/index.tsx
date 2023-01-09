@@ -14,11 +14,13 @@ function Home() {
 function HomeHelmet() {
   return (
     <Helmet>
-      <title>Naufal</title>
+      <title>Naufal - Digital Product Designer</title>
     </Helmet>
   )
 }
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+  display: block;
+`
 
 export default Home

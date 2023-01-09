@@ -12,25 +12,24 @@ const certifiedLogoAssetsUrl = [
 function HeroSection() {
   return (
     <WrapperHero>
-      <Title order={1} className="mobile__font-18 basic-animate">
+      <Title order={1} className="mobile__font-60 basic-animate">
         DIGITAL PRODUCT
       </Title>
-      <TextOutline order={1} className="mobile__font-18 basic-animate">
+      <TextOutline order={1} className="mobile__font-60 basic-animate">
         DESIGNER
       </TextOutline>
       <Text
         size="lg"
-        className="mt-22 mobile__mt-22 mobile__font-18 font-20 font-400 basic-animate-1"
+        className="mt-22 mobile__mt-22 font-20 mobile__font-14 font-400 basic-animate-1"
       >
-        Hi 👋 My name is Muhammad Naufal Ghifari, a Product <br /> Designer with
-        experience working in B2B and B2C Company <br /> as a UIX Designer. I
-        help companies to Designing human <br /> experience in using digital
-        product’s.
+        Hi 👋 My name is Muhammad Naufal Ghifari, a Product Designer with
+        experience working in B2B and B2C Company as a UIX Designer. I help
+        companies to Designing human experience in using digital product’s.
       </Text>
-      <Certified className="mt-129">
+      <Certified className="mt-129 basic-animate-2">
         <Text
           size="lg"
-          className="text mobile__mt-22 mobile__font-18 font-20 font-400 basic-animate-1"
+          className="text mobile__mt-22 mobile__font-14 font-20 font-400"
         >
           Design Certified By
         </Text>
@@ -47,10 +46,19 @@ function HeroSection() {
 const WrapperHero = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   color: ${({theme: {colors}}) => colors.light[0]};
   margin-top: 84px;
+
+  h1 {
+    line-height: 55px;
+  }
+
+  @media (min-width: 1100px) {
+    align-items: center;
+    text-align: center;
+  }
 `
 
 const Certified = styled.div`
@@ -61,6 +69,7 @@ const Certified = styled.div`
     margin-bottom: 24px;
   }
   .items {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

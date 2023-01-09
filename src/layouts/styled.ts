@@ -12,6 +12,7 @@ export const growDown = keyframes`
 
 // --- Layouts ---
 export const WrapperLayout = styled.div`
+  overflow-x: hidden;
   .children {
     height: 100%;
     min-height: 100vh;
@@ -27,32 +28,51 @@ export const WrapperLayout = styled.div`
     height: 100%;
     z-index: -99;
     position: absolute;
+    object-fit: cover;
   }
 `
 export const LeftContent = styled.div`
-  width: 25%;
+  width: 50%;
   text-align: left;
   display: flex;
   justify-content: start;
+
+  @media (min-width: 1100px) {
+    width: 25%;
+    text-align: left;
+    display: flex;
+    justify-content: start;
+  }
 `
 export const CenterContent = styled.div`
-  width: 50%;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+  width: 0%;
+
+  @media (min-width: 1100px) {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
 `
 export const RightContent = styled.div`
-  width: 25%;
+  width: 50%;
   text-align: right;
   display: flex;
   justify-content: end;
 
   .btn-contact {
-    display: flex;
-    align-items: center;
+    display: none;
+  }
 
-    svg {
-      margin-left: 15px;
+  @media (min-width: 1100px) {
+    width: 25%;
+    .btn-contact {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-left: 15px;
+      }
     }
   }
 `

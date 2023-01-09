@@ -16,7 +16,7 @@ function Header() {
         <LeftContent className="align-center">
           <Logo>
             <Link to="/" className={pathname === '/' ? 'match' : ''}>
-              <div className="mobile__font-22">NAUFAL .</div>
+              <div className="mobile__font-28">NAUFAL .</div>
             </Link>
           </Logo>
         </LeftContent>
@@ -86,7 +86,7 @@ const WrapperHeader = styled.header`
     display: none;
   }
 
-  @media (min-width: 1400px) {
+  @media (min-width: 1100px) {
     padding: 32px 48px;
 
     .nav__btn {
@@ -114,7 +114,7 @@ const Logo = styled.nav`
     letter-spacing: 3.9646px;
     color: #ffff;
 
-    @media (min-width: 1400px) {
+    @media (min-width: 1100px) {
       font-size: 31.72px;
     }
   }

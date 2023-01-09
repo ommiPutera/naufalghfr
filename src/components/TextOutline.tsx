@@ -28,16 +28,29 @@ const WrapperTextOutline = styled.div`
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ffff;
-    margin-top: -22px;
+    margin-top: 0;
 
     div {
       display: block;
       z-index: -1;
       width: 107%;
-      height: 28px;
+      height: 14px;
       background: ${({theme: {colors}}) => colors.primary[0]};
-      margin-top: -32px;
-      margin-bottom: 12px;
+      margin-top: -10px;
+      margin-bottom: 8px;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .text {
+      margin-top: -22px;
+
+      div {
+        height: 28px;
+        background: ${({theme: {colors}}) => colors.primary[0]};
+        margin-top: -32px;
+        margin-bottom: 12px;
+      }
     }
   }
 `
