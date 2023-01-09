@@ -1,26 +1,59 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {MantineProvider} from '@mantine/core'
+import {ThemeProvider} from 'styled-components'
+import {CustomFonts, GlobalStyle, mantineTheme, styledTheme} from './theme'
+import {Routes, Route} from 'react-router-dom'
+import {APP_ROUTES} from './routes'
+import NoMatchPage from './routes/NoMatch'
+import {DefaultLayout} from './layouts'
 
 function App() {
+  const theme = {
+    ...styledTheme,
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <MantineProvider withGlobalStyles withNormalizeCSS theme={mantineTheme}>
+      <CustomFonts />
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <AppRoutes />
+      </ThemeProvider>
+    </MantineProvider>
+  )
 }
 
-export default App;
+function AppRoutes() {
+  return (
+    <Routes>
+      <Route path="/" element={<DefaultLayout />}>
+        <Route path="*" element={<NoMatchPage />} />
+        {APP_ROUTES.map(route => (
+          <Route
+            key={route.path}
+            index={route.index}
+            path={route.path}
+            element={route.element}
+          />
+        ))}
+      </Route>
+    </Routes>
+  )
+}
+
+export function About() {
+  return (
+    <div>
+      <h2>About</h2>
+    </div>
+  )
+}
+
+export function Dashboard() {
+  return (
+    <div>
+      <h2>Dashboard</h2>
+    </div>
+  )
+}
+
+export default App
