@@ -7,6 +7,7 @@ declare module 'styled-components' {
       warning: string[]
       success: string[]
       danger: string[]
+      light: string[]
       dark: string[]
     }
   }

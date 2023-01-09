@@ -2,8 +2,10 @@ import {ActionIcon, Container} from '@mantine/core'
 import {Link, useLocation} from 'react-router-dom'
 import styled from 'styled-components'
 import {RouteArray} from '.'
+import {Button} from '../components/Button'
 import {BUTTON_MODE_SIZE, HEADER_SIZE} from '../defaultVariable'
 import {useNavigation} from '../store/rootStore'
+import {PenIcon} from '../utils/icons'
 import {LeftContent, CenterContent, RightContent, growDown} from './styled'
 
 function Header() {
@@ -14,7 +16,7 @@ function Header() {
         <LeftContent className="align-center">
           <Logo>
             <Link to="/" className={pathname === '/' ? 'match' : ''}>
-              <div>NAUFAL .</div>
+              <div className="mobile__font-22">NAUFAL .</div>
             </Link>
           </Logo>
         </LeftContent>
@@ -24,6 +26,10 @@ function Header() {
           </DesktopNav>
         </CenterContent>
         <RightContent>
+          <Button size="sm" variant="default" className="btn-contact">
+            Let's talk!
+            <PenIcon />
+          </Button>
           <NavButton />
         </RightContent>
       </Container>
@@ -117,10 +123,9 @@ const DesktopNav = styled.nav`
   ul {
     display: flex;
     list-style: none;
-    margin-left: 18px;
 
     li {
-      margin: 10px 18px 0 18px;
+      margin: 16px 18px 0 18px;
       font-size: 12.55px;
       font-weight: 400;
       text-decoration: none;
@@ -135,7 +140,6 @@ const DesktopNav = styled.nav`
         color: #ffff;
 
         div {
-          transition: 0.2s linear;
           width: 100%;
           background: ${({theme: {colors}}) => colors.primary[0]};
         }

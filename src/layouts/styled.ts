@@ -12,8 +12,8 @@ export const growDown = keyframes`
 
 // --- Layouts ---
 export const WrapperLayout = styled.div`
-  width: 100%;
   .children {
+    height: 100%;
     min-height: 100vh;
   }
   .nav__open {
@@ -23,7 +23,8 @@ export const WrapperLayout = styled.div`
   }
 
   .bg {
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     z-index: -99;
     position: absolute;
   }
@@ -45,6 +46,15 @@ export const RightContent = styled.div`
   text-align: right;
   display: flex;
   justify-content: end;
+
+  .btn-contact {
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 15px;
+    }
+  }
 `
 export const WrapperDropdownNav = styled.nav`
   width: 100%;

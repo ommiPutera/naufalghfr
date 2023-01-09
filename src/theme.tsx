@@ -43,6 +43,7 @@ const colors = {
     '#ff1919',
     '#ff0000',
   ],
+  light: ['#ffffff', '#9E9E9E'],
   dark: [
     '#fafafa',
     '#f4f4f5',
@@ -76,7 +77,7 @@ const mantineTheme = {
     xs: 11,
     sm: 13,
     md: 17,
-    lg: 19,
+    lg: 18,
     xl: 22,
   },
   components: {
