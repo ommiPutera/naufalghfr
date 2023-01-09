@@ -4,34 +4,30 @@ import styled from 'styled-components'
 import {RouteArray} from '.'
 import {BUTTON_MODE_SIZE, HEADER_SIZE} from '../defaultVariable'
 import {useNavigation} from '../store/rootStore'
-import Info from './Info'
 import {LeftContent, CenterContent, RightContent, growDown} from './styled'
 
 function Header() {
   const {pathname} = useLocation()
   return (
-    <>
-      <Info />
-      <WrapperHeader>
-        <Container size={HEADER_SIZE}>
-          <LeftContent className="align-center">
-            <Logo>
-              <Link to="/" className={pathname === '/' ? 'match' : ''}>
-                <div>ommiputera.com</div>
-              </Link>
-            </Logo>
-          </LeftContent>
-          <CenterContent>
-            <DesktopNav className="desktop__nav">
-              <RouteArray />
-            </DesktopNav>
-          </CenterContent>
-          <RightContent>
-            <NavButton />
-          </RightContent>
-        </Container>
-      </WrapperHeader>
-    </>
+    <WrapperHeader>
+      <Container size={HEADER_SIZE}>
+        <LeftContent className="align-center">
+          <Logo>
+            <Link to="/" className={pathname === '/' ? 'match' : ''}>
+              <div>NAUFAL .</div>
+            </Link>
+          </Logo>
+        </LeftContent>
+        <CenterContent>
+          <DesktopNav className="desktop__nav">
+            <RouteArray />
+          </DesktopNav>
+        </CenterContent>
+        <RightContent>
+          <NavButton />
+        </RightContent>
+      </Container>
+    </WrapperHeader>
   )
 }
 
@@ -85,8 +81,7 @@ const WrapperHeader = styled.header`
   }
 
   @media (min-width: 1400px) {
-    padding: 8px 0;
-    margin-bottom: 102px;
+    padding: 32px 48px;
 
     .nav__btn {
       display: none;
@@ -107,11 +102,14 @@ const Logo = styled.nav`
   height: 100%;
 
   a {
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 31.72px;
+    letter-spacing: 3.9646px;
+    color: #ffff;
 
     @media (min-width: 1400px) {
-      font-size: 23px;
+      font-size: 31.72px;
     }
   }
 `
@@ -123,14 +121,24 @@ const DesktopNav = styled.nav`
 
     li {
       margin: 10px 18px 0 18px;
-      font-size: 15.5px;
-      font-weight: 600;
+      font-size: 12.55px;
+      font-weight: 400;
       text-decoration: none;
+      color: #9e9e9e;
+
       div {
         width: 0;
-        height: 2.5px;
-        margin: 0 auto;
-        border-radius: 20px;
+        height: 4px;
+        margin: 3px auto 0 auto;
+      }
+      &.match {
+        color: #ffff;
+
+        div {
+          transition: 0.2s linear;
+          width: 100%;
+          background: ${({theme: {colors}}) => colors.primary[0]};
+        }
       }
     }
   }

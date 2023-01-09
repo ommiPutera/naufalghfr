@@ -1,6 +1,6 @@
 import {MantineProvider} from '@mantine/core'
 import {ThemeProvider} from 'styled-components'
-import {CustomFonts, GlobalStyle, mantineTheme, styledTheme} from './theme'
+import {GlobalStyle, mantineTheme, styledTheme} from './theme'
 import {Routes, Route} from 'react-router-dom'
 import {APP_ROUTES} from './routes'
 import NoMatchPage from './routes/NoMatch'
@@ -13,7 +13,6 @@ function App() {
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS theme={mantineTheme}>
-      <CustomFonts />
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <AppRoutes />
@@ -44,14 +43,6 @@ export function About() {
   return (
     <div>
       <h2>About</h2>
-    </div>
-  )
-}
-
-export function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
     </div>
   )
 }

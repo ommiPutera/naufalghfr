@@ -12,6 +12,7 @@ export const growDown = keyframes`
 
 // --- Layouts ---
 export const WrapperLayout = styled.div`
+  width: 100%;
   .children {
     min-height: 100vh;
   }

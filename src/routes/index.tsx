@@ -1,5 +1,5 @@
 import React from 'react'
-import {About, Dashboard} from '../App'
+import {About} from '../App'
 import Home from '../pages/Home'
 
 interface IRouteObject {
@@ -13,29 +13,24 @@ interface IRouteObject {
 
 export const ROUTES: IRouteObject[] = [
   {
-    label: 'Home',
+    label: 'HOME',
     path: '/',
     element: <Home />,
   },
   {
-    label: 'About',
+    label: 'ABOUT',
     path: '/about',
     element: <About />,
   },
   {
-    label: 'Dashboard',
-    path: '/dashboard',
-    element: <Dashboard />,
-  },
-  {
-    label: 'Project',
+    label: 'PROJECT',
     path: '/project',
-    element: <Dashboard />,
+    element: <About />,
   },
   {
-    label: 'Contact',
+    label: 'CONTACT',
     path: '/contact',
-    element: <Dashboard />,
+    element: <About />,
   },
 ]
 
@@ -52,8 +47,13 @@ export const APP_ROUTES: IRouteObject[] = [
     element: <About />,
   },
   {
-    label: 'Dashboard',
-    path: '/dashboard',
-    element: <Dashboard />,
+    label: 'Project',
+    path: '/project',
+    element: <About />,
+  },
+  {
+    label: 'Contact',
+    path: '/contact',
+    element: <About />,
   },
 ]

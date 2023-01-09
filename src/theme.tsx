@@ -1,62 +1,12 @@
-import {MantineThemeColorsOverride, Global} from '@mantine/core'
+import {MantineThemeColorsOverride} from '@mantine/core'
 import {createGlobalStyle, DefaultTheme} from 'styled-components'
-
-const CustomFonts = () => {
-  return (
-    <Global
-      styles={[
-        {
-          '@font-face': {
-            fontFamily: 'Matter',
-            src: `url('/fonts/Matter-SemiBold.woff') format('woff'),
-                  url('/fonts/Matter-SemiBold.woff2') format('woff2')`,
-            fontWeight: 600,
-            fontStyle: 'normal',
-            fontDisplay: 'swap',
-          },
-        },
-        {
-          '@font-face': {
-            fontFamily: 'Matter',
-            src: `url('/fonts/Matter-Medium.woff') format('woff'),
-                  url('/fonts/Matter-Medium.woff2') format('woff2')`,
-            fontWeight: 500,
-            fontStyle: 'normal',
-            fontDisplay: 'swap',
-          },
-        },
-        {
-          '@font-face': {
-            fontFamily: 'Matter',
-            src: `url('/fonts/Matter-Regular.woff') format('woff'),
-                  url('/fonts/Matter-Regular.woff2') format('woff2')`,
-            fontWeight: 'normal',
-            fontStyle: 'normal',
-            fontDisplay: 'swap',
-          },
-        },
-      ]}
-    />
-  )
-}
 
 const GlobalStyle = createGlobalStyle`
   body {}
 `
 
 const colors = {
-  primary: [
-    '#f0f9ff',
-    '#e0f2fe',
-    '#bae6fd',
-    '#7dd3fc',
-    '#38bdf8',
-    '#0ea5e9',
-    '#2563eb',
-    '#1d4ed8',
-    '#1e40af',
-    '#1e3a8a',
-  ],
+  primary: ['#4C4DDC'],
   warning: [
     '#fff7ed',
     '#ffedd5',
@@ -121,7 +71,7 @@ const Mantinecolors: MantineThemeColorsOverride = {
 
 const mantineTheme = {
   colors: Mantinecolors,
-  fontFamily: 'Matter, sans-serif',
+  fontFamily: 'Inter, sans-serif',
   fontSizes: {
     xs: 11,
     sm: 13,
@@ -137,7 +87,7 @@ const mantineTheme = {
           sm: 920,
           md: 1160,
           lg: 1320,
-          xl: 1530,
+          xl: 1480,
         },
       },
     },
@@ -155,12 +105,12 @@ const mantineTheme = {
     sm: 800,
     md: 1000,
     lg: 1100,
-    xl: 1400,
+    xl: 1440,
   },
   headings: {
-    fontFamily: 'Matter, sans-serif',
+    fontFamily: 'Inter, sans-serif',
     sizes: {
-      h1: {fontSize: 30, lineHeight: 1.2, fontWeight: 500},
+      h1: {fontSize: 104, lineHeight: 1.2, fontWeight: 900},
       h2: {fontSize: 24, lineHeight: 1.3, fontWeight: 500},
       h3: {fontSize: 22, lineHeight: 1.3, fontWeight: 500},
       h4: {fontSize: 20, lineHeight: 1.3, fontWeight: 500},
@@ -176,4 +126,4 @@ const mantineTheme = {
   datesLocale: 'en',
 }
 
-export {styledTheme, mantineTheme, GlobalStyle, CustomFonts}
+export {styledTheme, mantineTheme, GlobalStyle}
