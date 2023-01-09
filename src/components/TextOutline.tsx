@@ -33,7 +33,7 @@ const WrapperTextOutline = styled.div`
     div {
       display: block;
       z-index: -1;
-      width: 107%;
+      width: 104%;
       height: 14px;
       background: ${({theme: {colors}}) => colors.primary[0]};
       margin-top: -10px;
@@ -46,6 +46,7 @@ const WrapperTextOutline = styled.div`
       margin-top: -22px;
 
       div {
+        width: 107%;
         height: 28px;
         background: ${({theme: {colors}}) => colors.primary[0]};
         margin-top: -32px;

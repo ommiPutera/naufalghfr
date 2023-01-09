@@ -50,7 +50,7 @@ function NavButton() {
 }
 
 const WrapperHeader = styled.header`
-  padding: 12px 0;
+  padding: 38px 0 22px 0;
 
   > div {
     display: flex;

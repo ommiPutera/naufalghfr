@@ -14,3 +14,22 @@ export const PenIcon = ({ size = 11 }) => {
     </svg>
   )
 }
+
+export const ArrowDown = ({ size = 16 }) => {
+  return (
+    <svg
+      width={size}
+      height={size - 1}
+      viewBox={`0 0 ${size} ${size - 1}`}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M8.86275 12.5216L14.9482 6.55912L15.75 7.32112L8.30024 14.6186L0.850494 7.32112L1.65224 6.56062L7.73774 12.5224V0.0341187H8.86275V12.5216Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}

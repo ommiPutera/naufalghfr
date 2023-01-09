@@ -25,7 +25,7 @@ export const WrapperLayout = styled.div`
 
   .bg {
     width: 100%;
-    height: 100%;
+    height: 900px;
     z-index: -99;
     position: absolute;
     object-fit: cover;
