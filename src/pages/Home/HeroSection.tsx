@@ -17,7 +17,11 @@ function HeroSection() {
       <Title order={1} className="mobile__font-60 basic-animate">
         DIGITAL PRODUCT
       </Title>
-      <TextOutline order={1} className="mobile__font-60 basic-animate">
+      <TextOutline
+        size="104"
+        strokeColor="white"
+        className="mobile__font-60 basic-animate"
+      >
         DESIGNER
       </TextOutline>
       <Container size="xs" className="mobile__p-0">

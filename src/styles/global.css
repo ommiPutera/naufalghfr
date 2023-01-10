@@ -25,6 +25,9 @@ a {
 .font-600 {
   font-weight: 600;
 }
+.font-700 {
+  font-weight: 700;
+}
 .font-900 {
   font-weight: 900;
 }
@@ -107,6 +110,9 @@ a {
   .font-42 {
     font-size: 42px;
   }
+  .font-130 {
+    font-size: 130px;
+  }
 }
 
 .p-0 {
@@ -183,7 +189,7 @@ a {
 }
 
 .basic-animate {
-  animation: my-awesome-beboop 1s, pause-between-iterations 0.4s linear;
+  animation: my-awesome-beboop 1s, pause-between-iterations 0.5s linear;
 }
 .basic-animate-1 {
   animation: my-awesome-beboop 1s, pause-between-iterations 0.9s linear;
