@@ -109,7 +109,8 @@ const Logo = styled.nav`
 
   a {
     font-weight: 400;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive !important;
+    font-display: fallback;
     font-size: 31.72px;
     letter-spacing: 3.9646px;
     color: #ffff;

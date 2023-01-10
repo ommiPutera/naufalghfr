@@ -125,6 +125,9 @@ a {
   .mobile__mt-22 {
     margin-top: 22px;
   }
+  .mobile__mt-26 {
+    margin-top: 26px;
+  }
   .mobile__mt-28 {
     margin-top: 28px;
   }
@@ -150,6 +153,9 @@ a {
   }
   .mt-22 {
     margin-top: 22px;
+  }
+  .mt-26 {
+    margin-top: 26px;
   }
   .mt-32 {
     margin-top: 32px;

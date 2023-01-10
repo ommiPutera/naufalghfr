@@ -23,7 +23,7 @@ function HeroSection() {
       <Container size="xs" className="mobile__p-0">
         <Text
           size="lg"
-          className="mt-22 mobile__mt-62 font-20 mobile__font-14 font-400 basic-animate-1"
+          className="mt-26 mobile__mt-62 font-20 mobile__font-14 font-400 basic-animate-1"
         >
           Hi 👋 My name is Muhammad Naufal Ghifari, a Product Designer with
           experience working in B2B and B2C Company as a UIX Designer. I help
