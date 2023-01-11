@@ -4,7 +4,15 @@ import TextOutline from '../../components/TextOutline'
 
 function ProjectsSection() {
   return (
-    <WrapperHero className="mt-110 mobile__mt-42">
+    <WrapperProjects className="mt-110 mobile__mt-42">
+      <TextSection />
+    </WrapperProjects>
+  )
+}
+
+function TextSection() {
+  return (
+    <WrapperTextSection>
       <LeftContent>
         <Title className="font-130 mobile__font-60 basic-animate">
           MY PAST
@@ -23,11 +31,13 @@ function ProjectsSection() {
           <div />
         </Title>
       </RightContent>
-    </WrapperHero>
+    </WrapperTextSection>
   )
 }
 
-const WrapperHero = styled.div`
+const WrapperProjects = styled.div``
+
+const WrapperTextSection = styled.div`
   display: flex;
   justify-content: space-between;
 `
@@ -48,7 +58,7 @@ const RightContent = styled.div`
 
   .section__highlight {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     div {
       width: 405px;
       height: 4.76px;
