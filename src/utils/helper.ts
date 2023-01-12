@@ -1,3 +1,5 @@
+import {APP_ROUTES} from '../routes'
+
 function getClassProps<T>(props: T): string {
   if (!Boolean(Object.keys({props}).length)) return ''
 
@@ -21,4 +23,9 @@ function camelize(str: string) {
     .replace(/\s+/g, '')
 }
 
-export {getClassProps, camelize}
+function getMappingRoutes() {
+  const mappingRoutes = APP_ROUTES.map(route => route.label.toLowerCase())
+  return mappingRoutes
+}
+
+export {getClassProps, camelize, getMappingRoutes}

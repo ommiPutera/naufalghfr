@@ -17,7 +17,6 @@ function DefaultLayout() {
   const {isOpen} = useNavigation()
   return (
     <WrapperLayout>
-      <img className="bg" src="/assets/image/heroBg.jpg" alt="" />
       <Header />
       <DropdownNav />
       <Container size={CONTAINER_SIZE}>

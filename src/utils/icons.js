@@ -15,7 +15,7 @@ export const PenIcon = ({ size = 11 }) => {
   )
 }
 
-export const ArrowDown = ({ size = 16 }) => {
+export const ArrowDownIcon = ({ size = 16 }) => {
   return (
     <svg
       width={size}
@@ -25,9 +25,27 @@ export const ArrowDown = ({ size = 16 }) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M8.86275 12.5216L14.9482 6.55912L15.75 7.32112L8.30024 14.6186L0.850494 7.32112L1.65224 6.56062L7.73774 12.5224V0.0341187H8.86275V12.5216Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}
+
+export const ArrowTopRightIcon = ({ size = 18 }) => {
+  return (
+    <svg
+      width={size}
+      height={size + 1}
+      viewBox={`0 0 ${size} ${size + 1}`}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12.659 3.71973H1.28032V0.719727H17.7803V17.2197H14.7803V5.84105L2.34099 18.2804L0.219666 16.1591L12.659 3.71973Z"
         fill="currentColor"
       />
     </svg>

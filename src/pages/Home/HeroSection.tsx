@@ -2,7 +2,8 @@ import {Container, Text, Title} from '@mantine/core'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import TextOutline from '../../components/TextOutline'
-import {ArrowDown} from '../../utils/icons'
+import {HeroBackgrounds} from '../../layouts/Backgrounds'
+import {ArrowDownIcon} from '../../utils/icons'
 
 const certifiedLogoAssetsUrl = [
   '/assets/image/google-logo.png',
@@ -14,6 +15,7 @@ const certifiedLogoAssetsUrl = [
 function HeroSection() {
   return (
     <WrapperHero className="mt-110 mobile__mt-42">
+      <HeroBackgrounds route="home" imgUrl="/assets/image/heroBg.jpg" />
       <Title order={1} className="mobile__font-60 basic-animate">
         DIGITAL PRODUCT
       </Title>
@@ -49,7 +51,7 @@ function HeroSection() {
       </Certified>
       <ScrollDown className="mobile__mt-62 basic-animate-3">
         <Button className="btn-scroll-down">
-          <ArrowDown /> Scroll down
+          <ArrowDownIcon /> Scroll down
         </Button>
       </ScrollDown>
     </WrapperHero>

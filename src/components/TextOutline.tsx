@@ -16,7 +16,7 @@ function TextOutline({children, size, className, strokeColor}: Props) {
           className,
           `color__${strokeColor}`,
           `size__${size}`,
-          'text',
+          'textOutline',
         )}
       >
         {children}
@@ -27,7 +27,7 @@ function TextOutline({children, size, className, strokeColor}: Props) {
 }
 
 const WrapperTextOutline = styled.div`
-  .text {
+  .textOutline {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +45,21 @@ const WrapperTextOutline = styled.div`
       -webkit-text-stroke-color: ${({theme: {colors}}) => colors.dark[9]};
     }
 
+    &.size__104 {
+      margin-top: 0;
+    }
+    &.size__130 {
+      margin-top: -16px;
+    }
+    &.size__104 div {
+      margin-top: -13px;
+      width: 105%;
+    }
+    &.size__130 div {
+      margin-top: -20px;
+      width: 104%;
+    }
+
     div {
       display: block;
       z-index: -1;
@@ -57,7 +72,7 @@ const WrapperTextOutline = styled.div`
   }
 
   @media (min-width: 1100px) {
-    .text {
+    .textOutline {
       &.size__104 {
         margin-top: -22px;
       }

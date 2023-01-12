@@ -57,6 +57,9 @@ a {
   .mobile__font-28 {
     font-size: 28px;
   }
+  .mobile__font-32 {
+    font-size: 32px;
+  }
   .mobile__font-34 {
     font-size: 34px;
   }
@@ -97,6 +100,9 @@ a {
   }
   .font-28 {
     font-size: 28px;
+  }
+  .font-32 {
+    font-size: 32px;
   }
   .font-34 {
     font-size: 34px;
@@ -186,6 +192,22 @@ a {
 
 .text-align-left {
   text-align: left;
+}
+
+.width-40 {
+  width: 40%;
+}
+.width-45 {
+  width: 45%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-55 {
+  width: 55%;
+}
+.width-60 {
+  width: 60%;
 }
 
 .basic-animate {

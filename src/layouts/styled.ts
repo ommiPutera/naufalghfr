@@ -22,15 +22,6 @@ export const WrapperLayout = styled.div`
     overflow: hidden;
     display: none;
   }
-
-  .bg {
-    width: 100%;
-    height: 100vh;
-    min-height: 910px;
-    z-index: -99;
-    position: absolute;
-    object-fit: cover;
-  }
 `
 export const LeftContent = styled.div`
   width: 50%;
