@@ -1,6 +1,6 @@
-import {ProjectCardItemTypes} from './ProjectsSection'
+import {CardItemTypes} from '../types'
 
-const propsContentProjects: ProjectCardItemTypes[] = [
+const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/kenari-apps.jpg',
     title: 'Kenari Apps',
@@ -39,4 +39,39 @@ const propsContentProjects: ProjectCardItemTypes[] = [
   },
 ]
 
-export {propsContentProjects}
+const propsContentTools: CardItemTypes[] = [
+  {
+    assetSrc: '/assets/image/toolsLogo.png',
+    title: 'Web design',
+    to: '/',
+    desc: 'Have a design ready to build? I can do that for you.',
+    animate: 'basic-animate',
+    layout: '1',
+  },
+  {
+    assetSrc: '/assets/image/toolsLogo.png',
+    title: 'UI design',
+    to: '/',
+    desc: 'Have a design ready to build? I can do that for you.',
+    animate: 'basic-animate-1',
+    layout: '1',
+  },
+  {
+    assetSrc: '/assets/image/toolsLogo.png',
+    title: 'UX design',
+    to: '/',
+    desc: 'Have a design ready to build? I can do that for you.',
+    animate: 'basic-animate',
+    layout: '1',
+  },
+  {
+    assetSrc: '/assets/image/toolsLogo.png',
+    title: 'Icon design',
+    to: '/',
+    desc: 'Have a design ready to build? I can do that for you.',
+    animate: 'basic-animate-1',
+    layout: '1',
+  },
+]
+
+export {propsContentProjects, propsContentTools}

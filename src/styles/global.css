@@ -29,6 +29,9 @@ button:focus {
   background: none;
 }
 
+.font-uppercase {
+  text-transform: uppercase;
+}
 .font-400 {
   font-weight: 400;
 }
@@ -156,6 +159,9 @@ button:focus {
   .mobile__mt-28 {
     margin-top: 28px;
   }
+  .mobile__mt-29 {
+    margin-top: 29px;
+  }
   .mobile__mt-32 {
     margin-top: 32px;
   }
@@ -184,6 +190,9 @@ button:focus {
   }
   .mt-26 {
     margin-top: 26px;
+  }
+  .mt-29 {
+    margin-top: 29px;
   }
   .mt-32 {
     margin-top: 32px;

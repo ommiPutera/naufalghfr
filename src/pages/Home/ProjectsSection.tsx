@@ -3,9 +3,10 @@ import clsx from 'clsx'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
-import TextOutline from '../../components/TextOutline'
 import {ArrowTopRightIcon} from '../../utils/icons'
-import {propsContentProjects} from './propsCollection'
+import {propsContentProjects} from './shared/propsCollection'
+import {TitleSection} from './shared'
+import {CardItemTypes} from './types'
 
 export type ProjectCardItemTypes = {
   assetSrc: string
@@ -19,43 +20,27 @@ export type ProjectCardItemTypes = {
 
 function ProjectsSection() {
   return (
-    <WrapperProjects className="mt-110 mobile__mt-42">
-      <TitleSection />
+    <Wrapper className="mt-110 mobile__mt-42">
+      <TitleSection
+        highlightText="BEST PROJECTS SELECTION"
+        title={{defaultText: 'MY PAS', outlineText: 'PROJECTS'}}
+      />
       <Content className="mt-62">
-        <AllProjects>
-          <Button size="lg" variant="default" className="btn__projects">
-            ALL PROJECTS
-            <ArrowTopRightIcon />
-          </Button>
-        </AllProjects>
+        <AllProjectsButton />
         <ProjectsCards />
       </Content>
-    </WrapperProjects>
+    </Wrapper>
   )
 }
 
-function TitleSection() {
+function AllProjectsButton() {
   return (
-    <WrapperTitleSection className="mobile__mt-12">
-      <LeftContent>
-        <Title className="font-130 mobile__font-60 basic-animate">
-          MY PAST
-        </Title>
-        <TextOutline
-          size="130"
-          strokeColor="black"
-          className="font-130 mobile__font-60 basic-animate"
-        >
-          PROJECTS
-        </TextOutline>
-      </LeftContent>
-      <RightContent>
-        <Title className="font-700 font-16 mobile__font-14 basic-animate section__highlight">
-          BEST PROJECTS SELECTION
-          <div />
-        </Title>
-      </RightContent>
-    </WrapperTitleSection>
+    <WrapperAllProjects>
+      <Button size="lg" variant="default" className="btn__projects">
+        ALL PROJECTS
+        <ArrowTopRightIcon />
+      </Button>
+    </WrapperAllProjects>
   )
 }
 
@@ -86,7 +71,7 @@ function ProjectCardItem({
   types,
   animate,
   layout,
-}: ProjectCardItemTypes) {
+}: CardItemTypes) {
   return (
     <ProjectCard className="project__card mobile__mt-26">
       <div className={clsx(layout === '1' ? 'left__' : 'right__', 'title__')}>
@@ -135,7 +120,7 @@ const Content = styled.div`
   }
 `
 
-const AllProjects = styled.div`
+const WrapperAllProjects = styled.div`
   padding-top: 26px;
   .btn__projects {
     .mantine-Button-root {
@@ -168,7 +153,15 @@ const AllProjects = styled.div`
   }
 `
 
-const WrapperProjects = styled.div``
+const Wrapper = styled.div`
+  border-bottom: 1px solid rgba(18, 18, 18, 0.15);
+  padding-bottom: 48px;
+
+  @media (min-width: 800px) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+`
 const WrapperProjectsCards = styled.div`
   display: flex;
   flex-direction: column;
@@ -177,10 +170,10 @@ const WrapperProjectsCards = styled.div`
     width: 90%;
 
     .project__card:last-child {
-      .left {
+      .left__ {
         border-bottom: none;
       }
-      .right {
+      .right__ {
         border-bottom: none;
       }
     }
@@ -259,63 +252,14 @@ const ProjectCard = styled.div`
       padding: 59px;
       width: 50%;
       margin: auto;
+      min-height: 525px;
 
       img {
         width: 100%;
-        height: 100%;
-        min-height: 525px;
-        object-fit: contain;
+        height: 525px;
+        object-fit: cover;
       }
     }
-  }
-`
-
-const WrapperTitleSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 120px;
-
-  @media (min-width: 800px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-`
-
-const LeftContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-`
-
-const RightContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-
-  .section__highlight {
-    text-align: left;
-    margin-bottom: 0px;
-    margin-top: 20px;
-    div {
-      display: none;
-    }
-
-    @media (min-width: 800px) {
-      margin-bottom: 70px;
-      div {
-        display: block;
-        width: 405px;
-        height: 4.76px;
-        margin-top: 11px;
-        background: ${({theme: {colors}}) => colors.dark[9]};
-      }
-    }
-  }
-
-  @media (min-width: 800px) {
   }
 `
 

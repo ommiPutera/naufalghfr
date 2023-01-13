@@ -2,6 +2,7 @@ import {Helmet} from 'react-helmet'
 import styled from 'styled-components'
 import HeroSection from './HeroSection'
 import ProjectsSection from './ProjectsSection'
+import ToolsSection from './ToolsSection'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <HomeHelmet />
       <HeroSection />
       <ProjectsSection />
+      <ToolsSection />
     </Wrapper>
   )
 }
