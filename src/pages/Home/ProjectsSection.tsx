@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import TextOutline from '../../components/TextOutline'
-import {ArrowTopRightIcon, PenIcon} from '../../utils/icons'
+import {ArrowTopRightIcon} from '../../utils/icons'
 import {propsContentProjects} from './propsCollection'
 
 export type ProjectCardItemTypes = {
@@ -21,11 +21,11 @@ function ProjectsSection() {
   return (
     <WrapperProjects className="mt-110 mobile__mt-42">
       <TitleSection />
-      <Content className="mt-62 mobile__mt-42">
+      <Content className="mt-62">
         <AllProjects>
-          <Button size="sm" variant="default" className="btn__projects">
+          <Button size="lg" variant="default" className="btn__projects">
             ALL PROJECTS
-            <PenIcon />
+            <ArrowTopRightIcon />
           </Button>
         </AllProjects>
         <ProjectsCards />
@@ -88,12 +88,12 @@ function ProjectCardItem({
   layout,
 }: ProjectCardItemTypes) {
   return (
-    <ProjectCard className="project__card">
+    <ProjectCard className="project__card mobile__mt-26">
       <div className={clsx(layout === '1' ? 'left__' : 'right__', 'title__')}>
         <div className="basic-animate">
           <div>
             <Link to={to} className="text__">
-              <Title className="font-32 font-600 mobile__font-14">
+              <Title className="font-32 font-600 mobile__font-28">
                 {title}
               </Title>
               <div className="icon__">
@@ -103,7 +103,7 @@ function ProjectCardItem({
           </div>
           <Text
             size="lg"
-            className="mt-26 mobile__mt-62 font-14 mobile__font-14 font-400"
+            className="mt-43 mobile__mt-43 font-14 mobile__font-14 font-500"
           >
             {desc}
           </Text>
@@ -111,7 +111,7 @@ function ProjectCardItem({
         <div className="basic-animate-1">
           <Text
             size="lg"
-            className="mt-26 mobile__mt-62 font-14 mobile__font-14 font-400"
+            className="types__ mt-26 mobile__mt-43 font-14 mobile__font-14 font-500"
           >
             {types}
           </Text>
@@ -126,22 +126,45 @@ function ProjectCardItem({
 
 const Content = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column-reverse;
 
-  @media (min-width: 1100px) {
-    border-top: 1px solid rgba(18, 18, 18, 0.15);
+  @media (min-width: 800px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 `
 
 const AllProjects = styled.div`
+  padding-top: 26px;
   .btn__projects {
+    .mantine-Button-root {
+      width: 100%;
+      min-height: 48px;
+    }
     .mantine-Button-label {
-      padding: 0 72px;
+      font-size: 14px;
+      gap: 15px;
     }
   }
 
-  @media (min-width: 1100px) {
-    width: 30%;
+  @media (min-width: 800px) {
+    border-top: 1px solid rgba(18, 18, 18, 0.15);
+    width: 25%;
+    padding-top: 100px;
+
+    .btn__projects {
+      .mantine-Button-root {
+        width: 95%;
+        min-height: 64px;
+      }
+      .mantine-Button-label {
+        padding: 0 35px;
+        font-weight: 400;
+        font-size: 20px;
+        gap: 16px;
+      }
+    }
   }
 `
 
@@ -149,8 +172,9 @@ const WrapperProjects = styled.div``
 const WrapperProjectsCards = styled.div`
   display: flex;
   flex-direction: column;
-  @media (min-width: 1100px) {
-    width: 70%;
+
+  @media (min-width: 800px) {
+    width: 90%;
 
     .project__card:last-child {
       .left {
@@ -163,8 +187,48 @@ const WrapperProjectsCards = styled.div`
   }
 `
 const ProjectCard = styled.div`
-  @media (min-width: 1100px) {
+  display: flex;
+  flex-direction: column-reverse;
+  border-top: 1px solid rgba(18, 18, 18, 0.15);
+
+  .title__ {
+    width: 100%;
+    .text__ {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 33px;
+
+      .icon__ {
+        width: 20%;
+        height: 100%;
+        margin-top: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+    }
+    .types__ {
+      text-transform: uppercase;
+    }
+  }
+
+  .preview__ {
+    padding-top: 26px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (min-width: 800px) {
     display: flex;
+    flex-direction: row;
 
     .left__ {
       order: 1;
@@ -175,7 +239,7 @@ const ProjectCard = styled.div`
 
     .title__ {
       width: 50%;
-      padding: 52px;
+      padding: 55px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -184,20 +248,15 @@ const ProjectCard = styled.div`
 
       .text__ {
         display: flex;
+        align-items: center;
+        margin-top: 0px;
         justify-content: space-between;
-
-        .icon__ {
-          width: 30%;
-          display: flex;
-          align-items: flex-start;
-          justify-content: flex-end;
-        }
       }
     }
     .preview__ {
       border-left: 1px solid rgba(18, 18, 18, 0.15);
       border-bottom: 1px solid rgba(18, 18, 18, 0.15);
-      padding: 52px;
+      padding: 59px;
       width: 50%;
       margin: auto;
 
@@ -217,7 +276,7 @@ const WrapperTitleSection = styled.div`
   align-items: flex-start;
   margin-top: 120px;
 
-  @media (min-width: 1100px) {
+  @media (min-width: 800px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
@@ -244,7 +303,7 @@ const RightContent = styled.div`
       display: none;
     }
 
-    @media (min-width: 1100px) {
+    @media (min-width: 800px) {
       margin-bottom: 70px;
       div {
         display: block;
@@ -256,7 +315,7 @@ const RightContent = styled.div`
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 800px) {
   }
 `
 

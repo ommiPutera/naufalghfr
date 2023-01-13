@@ -16,11 +16,18 @@ export const WrapperLayout = styled.div`
   .children {
     height: 100%;
     min-height: 100vh;
+    padding: 0 24px;
   }
   .nav__open {
     filter: blur(2px);
     overflow: hidden;
     display: none;
+  }
+
+  @media (min-width: 800px) {
+    .children {
+      padding: 0;
+    }
   }
 `
 export const LeftContent = styled.div`
@@ -29,7 +36,7 @@ export const LeftContent = styled.div`
   display: flex;
   justify-content: start;
 
-  @media (min-width: 1100px) {
+  @media (min-width: 800px) {
     width: 25%;
     text-align: left;
     display: flex;
@@ -39,7 +46,7 @@ export const LeftContent = styled.div`
 export const CenterContent = styled.div`
   width: 0%;
 
-  @media (min-width: 1100px) {
+  @media (min-width: 800px) {
     width: 50%;
     text-align: center;
     display: flex;
@@ -56,7 +63,7 @@ export const RightContent = styled.div`
     display: none;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 800px) {
     width: 25%;
     .btn-contact {
       display: flex;

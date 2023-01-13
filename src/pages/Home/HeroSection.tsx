@@ -69,7 +69,7 @@ const WrapperHero = styled.div`
     line-height: 60px;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 800px) {
     align-items: center;
     text-align: center;
 
@@ -99,7 +99,7 @@ const Certified = styled.div`
     }
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 800px) {
     .items {
       width: 100%;
       display: flex;

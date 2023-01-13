@@ -86,7 +86,7 @@ const WrapperHeader = styled.header`
     display: none;
   }
 
-  @media (min-width: 1100px) {
+  @media (min-width: 800px) {
     padding: 32px 48px;
 
     .nav__btn {
@@ -115,7 +115,7 @@ const Logo = styled.nav`
     letter-spacing: 3.9646px;
     color: #ffff;
 
-    @media (min-width: 1100px) {
+    @media (min-width: 800px) {
       font-size: 31.72px;
     }
   }

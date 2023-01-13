@@ -19,7 +19,7 @@ function DefaultLayout() {
     <WrapperLayout>
       <Header />
       <DropdownNav />
-      <Container size={CONTAINER_SIZE}>
+      <Container size={CONTAINER_SIZE} className="p-0">
         <div className={clsx('children ', isOpen ? 'nav__open' : '')}>
           <Outlet />
         </div>
