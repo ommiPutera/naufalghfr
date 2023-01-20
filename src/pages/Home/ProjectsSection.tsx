@@ -139,8 +139,11 @@ const WrapperAllProjects = styled.div`
     padding-top: 100px;
 
     .btn__projects {
+      margin-right: 30px;
+      position: sticky;
+      top: 22px;
       .mantine-Button-root {
-        width: 95%;
+        width: 100%;
         min-height: 64px;
       }
       .mantine-Button-label {

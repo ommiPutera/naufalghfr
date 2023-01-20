@@ -2,7 +2,6 @@ import {Container, Text, Title} from '@mantine/core'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import TextOutline from '../../components/TextOutline'
-import {HeroBackgrounds} from '../../layouts/Backgrounds'
 import {ArrowDownIcon} from '../../utils/icons'
 
 const certifiedLogoAssetsUrl = [
@@ -14,8 +13,7 @@ const certifiedLogoAssetsUrl = [
 
 function HeroSection() {
   return (
-    <WrapperHero className="mt-110 mobile__mt-42">
-      <HeroBackgrounds route="home" imgUrl="/assets/image/heroBg.jpg" />
+    <WrapperHero className="mobile__mt-42">
       <Title order={1} className="mobile__font-60 basic-animate">
         DIGITAL PRODUCT
       </Title>
@@ -63,6 +61,7 @@ const WrapperHero = styled.div`
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
+  margin: 88px 0 88px 0;
   color: ${({theme: {colors}}) => colors.light[0]};
 
   h1 {
@@ -71,7 +70,10 @@ const WrapperHero = styled.div`
 
   @media (min-width: 800px) {
     align-items: center;
+    justify-content: center;
     text-align: center;
+    height: 75vh;
+    margin: 62px 0 62px 0;
 
     h1 {
       line-height: 120px;

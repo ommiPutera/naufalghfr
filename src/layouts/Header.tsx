@@ -98,7 +98,7 @@ const WrapperHeader = styled.header`
   }
 `
 const Logo = styled.nav`
-  margin: 0;
+  margin: 0 0 0 12px;
   padding: 0;
   display: flex;
   align-items: center;

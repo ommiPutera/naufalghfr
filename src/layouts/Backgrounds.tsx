@@ -20,7 +20,6 @@ const WrapperBackgrounds = styled.div`
   position: absolute;
   z-index: -99;
   width: 100%;
-  height: 100%;
 
   .bg {
     object-fit: cover;
@@ -29,8 +28,9 @@ const WrapperBackgrounds = styled.div`
 
   &.home {
     .bg {
-      max-height: 930px;
-      min-height: 900px;
+      height: max-content;
+      min-height: 910px;
+      max-height: 100vh;
     }
   }
 `

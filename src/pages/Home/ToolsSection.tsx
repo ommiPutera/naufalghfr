@@ -24,7 +24,7 @@ function Cards() {
     <WrapperCards className="mt-82 mobile__mt-26">
       <Grid>
         {propsContentTools.map(project => (
-          <Grid.Col key={project.title}>
+          <Grid.Col key={project.title} sm={1} md={3}>
             <CardItem
               assetSrc={project.assetSrc}
               title={project.title}
@@ -91,8 +91,9 @@ const WrapperCardItem = styled.div`
     height: 17.91px;
   }
 
-  @media (min-width: 800px) {
-    width: 325px;
+  @media (max-width: 800px) {
+    gap: 14px;
+    width: max-content;
   }
 `
 
