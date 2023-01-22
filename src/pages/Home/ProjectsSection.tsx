@@ -20,7 +20,7 @@ export type ProjectCardItemTypes = {
 
 function ProjectsSection() {
   return (
-    <Wrapper className="mt-110 mobile__mt-42">
+    <Wrapper className="mt-110 mobile__mt-42" id="projects">
       <TitleSection
         highlightText="BEST PROJECTS SELECTION"
         title={{defaultText: 'MY PAS', outlineText: 'PROJECTS'}}
@@ -112,6 +112,7 @@ function ProjectCardItem({
 const Content = styled.div`
   display: flex;
   flex-direction: column-reverse;
+  height: auto;
 
   @media (min-width: 800px) {
     display: flex;
@@ -140,8 +141,6 @@ const WrapperAllProjects = styled.div`
 
     .btn__projects {
       margin-right: 30px;
-      position: sticky;
-      top: 22px;
       .mantine-Button-root {
         width: 100%;
         min-height: 64px;

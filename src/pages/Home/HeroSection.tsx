@@ -48,9 +48,11 @@ function HeroSection() {
         </Container>
       </Certified>
       <ScrollDown className="mobile__mt-62 basic-animate-3">
-        <Button className="btn-scroll-down">
-          <ArrowDownIcon /> Scroll down
-        </Button>
+        <a href="#projects">
+          <Button className="btn-scroll-down">
+            <ArrowDownIcon /> Scroll down
+          </Button>
+        </a>
       </ScrollDown>
     </WrapperHero>
   )
