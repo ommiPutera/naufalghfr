@@ -1,5 +1,5 @@
 import React from 'react'
-import {About} from '../App'
+import About from '../pages/About'
 import Home from '../pages/Home'
 
 interface IRouteObject {

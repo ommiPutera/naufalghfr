@@ -111,7 +111,11 @@ const mantineTheme = {
   headings: {
     fontFamily: 'Inter, sans-serif',
     sizes: {
-      h1: {fontSize: 104, lineHeight: 1.2, fontWeight: 900},
+      h1: {
+        fontSize: 104,
+        lineHeight: 1.2,
+        fontWeight: 700,
+      },
       h2: {fontSize: 24, lineHeight: 1.3, fontWeight: 500},
       h3: {fontSize: 22, lineHeight: 1.3, fontWeight: 500},
       h4: {fontSize: 20, lineHeight: 1.3, fontWeight: 500},
