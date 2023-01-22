@@ -65,8 +65,10 @@ const WrapperCards = styled.div`
   padding-top: 26px;
   position: relative;
   > div {
-    > div:first-child {
+    > div:hover {
       > div {
+        cursor: pointer;
+        transition: 0.3s;
         background: ${({theme: {colors}}) => colors.primary[0]};
       }
     }
