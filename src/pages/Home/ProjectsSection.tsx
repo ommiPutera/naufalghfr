@@ -75,7 +75,7 @@ function ProjectCardItem({
   return (
     <ProjectCard className="project__card mobile__mt-26">
       <div className={clsx(layout === '1' ? 'left__' : 'right__', 'title__')}>
-        <div className="basic-animate">
+        <div>
           <div>
             <Link to={to} className="text__">
               <Title className="font-32 font-600 mobile__font-28">
@@ -93,7 +93,7 @@ function ProjectCardItem({
             {desc}
           </Text>
         </div>
-        <div className="basic-animate-1">
+        <div>
           <Text
             size="lg"
             className="types__ mt-26 mobile__mt-43 font-14 mobile__font-14 font-500"

@@ -45,7 +45,7 @@ const propsContentTools: CardItemTypes[] = [
     title: 'Web design',
     to: '/',
     desc: 'Have a design ready to build? I can do that for you.',
-    animate: 'basic-animate',
+    animate: '',
     layout: '1',
   },
   {
@@ -53,7 +53,7 @@ const propsContentTools: CardItemTypes[] = [
     title: 'UI design',
     to: '/',
     desc: 'Have a design ready to build? I can do that for you.',
-    animate: 'basic-animate-1',
+    animate: '',
     layout: '1',
   },
   {
@@ -61,7 +61,7 @@ const propsContentTools: CardItemTypes[] = [
     title: 'UX design',
     to: '/',
     desc: 'Have a design ready to build? I can do that for you.',
-    animate: 'basic-animate',
+    animate: '',
     layout: '1',
   },
   {
@@ -69,7 +69,7 @@ const propsContentTools: CardItemTypes[] = [
     title: 'Icon design',
     to: '/',
     desc: 'Have a design ready to build? I can do that for you.',
-    animate: 'basic-animate-1',
+    animate: '',
     layout: '1',
   },
 ]

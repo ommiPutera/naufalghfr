@@ -22,19 +22,17 @@ function TitleSection({
       className={clsx(reversedRow ? 'reverse' : '', 'mobile__mt-12')}
     >
       <LeftContent>
-        <Title className="font-130 mobile__font-60 basic-animate">
-          {defaultText}
-        </Title>
+        <Title className="font-130 mobile__font-60">{defaultText}</Title>
         <TextOutline
           size="130"
           strokeColor="black"
-          className="font-130 mobile__font-60 basic-animate"
+          className="font-130 mobile__font-60"
         >
           {outlineText}
         </TextOutline>
       </LeftContent>
       <RightContent>
-        <Title className="font-700 font-16 mobile__font-14 basic-animate section__highlight">
+        <Title className="font-700 font-16 mobile__font-14 section__highlight">
           {highlightText}
           <div />
         </Title>

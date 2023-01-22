@@ -5,6 +5,7 @@ export type CardItemTypes = {
   desc: string
   types?: string
   animate?:
+    | ''
     | 'basic-animate'
     | 'basic-animate-1'
     | 'basic-animate-2'

@@ -123,20 +123,3 @@ export const WrapperDropdownNav = styled.nav`
     }
   }
 `
-
-// --- Footer ---
-export const WrapperFooter = styled.footer`
-  padding: 32px 12px;
-
-  > div {
-    display: flex;
-  }
-
-  .nav__open {
-    filter: blur(2px);
-  }
-
-  @media (min-width: 1600px) {
-    padding: 32px 0;
-  }
-`

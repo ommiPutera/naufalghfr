@@ -63,6 +63,7 @@ const Wrapper = styled.div``
 const WrapperCards = styled.div`
   border-top: 1px solid rgba(18, 18, 18, 0.15);
   padding-top: 26px;
+  position: relative;
   > div {
     > div:first-child {
       > div {
@@ -78,7 +79,7 @@ const WrapperCards = styled.div`
 const WrapperCardItem = styled.div`
   color: ${({theme: {colors}}) => colors.light[0]};
   min-width: 325px;
-  width: 100%;
+  max-width: 100%;
   min-height: 164px;
   height: max-content;
   overflow: hidden;
