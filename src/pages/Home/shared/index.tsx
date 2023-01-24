@@ -22,7 +22,9 @@ function TitleSection({
       className={clsx(reversedRow ? 'reverse' : '', 'mobile__mt-12')}
     >
       <LeftContent>
-        <Title className="font-130 mobile__font-60">{defaultText}</Title>
+        <Title className="font-130 mobile__font-60 default__text">
+          {defaultText}
+        </Title>
         <TextOutline
           size="130"
           strokeColor="black"
@@ -55,6 +57,10 @@ const WrapperTitleSection = styled.div`
 
     &.reverse {
       flex-direction: row-reverse;
+
+      .default__text {
+        text-align: right;
+      }
     }
   }
 `
