@@ -9,7 +9,12 @@ function HeroHelmet() {
   return (
     <Helmet>
       <title>About Naufal Ghifari</title>
-      <meta name="theme-color" content="#1D1D1D" />
+      <meta
+        name="description"
+        content="About Naufal Ghifari"
+        data-react-helmet="true"
+      />
+      <meta name="theme-color" content="#1D1D1D" data-react-helmet="true" />
     </Helmet>
   )
 }

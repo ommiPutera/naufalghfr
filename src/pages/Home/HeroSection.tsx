@@ -15,7 +15,7 @@ const certifiedLogoAssetsUrl = [
 function HeroHelmet() {
   return (
     <Helmet>
-      <title></title>
+      <title>Naufal - Digital Product Designer</title>
       <meta
         name="description"
         content="Naufal - Digital Product Designer"

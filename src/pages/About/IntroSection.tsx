@@ -7,8 +7,7 @@ import {ArrowTopRightIcon} from '../../utils/icons'
 function IntroHelmet() {
   return (
     <Helmet>
-      <title>Naufal Ghifari Resume</title>
-      <meta name="theme-color" content="#FFFFFF" />
+      <meta name="theme-color" content="#FFFFFF" data-react-helmet="true" />
     </Helmet>
   )
 }
