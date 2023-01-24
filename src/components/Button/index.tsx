@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import styled from 'styled-components'
 import {getClassProps} from '../../utils/helper'
 
-interface IButton {
+interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode | JSX.Element
   className?: string
   variant?: 'outline' | 'default'

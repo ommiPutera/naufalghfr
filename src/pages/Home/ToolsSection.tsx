@@ -65,7 +65,7 @@ function CardItem({assetSrc, title, desc, to, animate}: CardItemTypes) {
         </Title>
         <Text
           size="lg"
-          className="mt-12 mobile__mt-12 font-14 mobile__font-14 font-500"
+          className="desc__ mt-12 mobile__mt-12 font-14 mobile__font-14 font-500"
         >
           {desc}
         </Text>
@@ -105,10 +105,13 @@ const WrapperCardItem = styled.div`
   background: ${({theme: {colors}}) => colors.dark[9]};
 
   img {
-    width: 25.88px;
-    height: 17.91px;
+    width: 42px;
+    height: 42px;
   }
 
+  .desc__ {
+    line-height: 18.95px;
+  }
   @media (max-width: 1200px) {
     gap: 14px;
     width: max-content;

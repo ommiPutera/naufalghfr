@@ -41,7 +41,7 @@ const propsContentProjects: CardItemTypes[] = [
 
 const propsContentTools: CardItemTypes[] = [
   {
-    assetSrc: '/assets/image/toolsLogo.png',
+    assetSrc: '/assets/icons/icon1.svg',
     title: 'Web design',
     to: '/',
     desc: 'Have a design ready to build? I can do that for you.',
@@ -49,7 +49,7 @@ const propsContentTools: CardItemTypes[] = [
     layout: '1',
   },
   {
-    assetSrc: '/assets/image/toolsLogo.png',
+    assetSrc: '/assets/icons/icon2.svg',
     title: 'UI design',
     to: '/',
     desc: 'Have a design ready to build? I can do that for you.',
@@ -57,7 +57,7 @@ const propsContentTools: CardItemTypes[] = [
     layout: '1',
   },
   {
-    assetSrc: '/assets/image/toolsLogo.png',
+    assetSrc: '/assets/icons/icon3.svg',
     title: 'UX design',
     to: '/',
     desc: 'Have a design ready to build? I can do that for you.',
@@ -65,7 +65,7 @@ const propsContentTools: CardItemTypes[] = [
     layout: '1',
   },
   {
-    assetSrc: '/assets/image/toolsLogo.png',
+    assetSrc: '/assets/icons/icon4.svg',
     title: 'Icon design',
     to: '/',
     desc: 'Have a design ready to build? I can do that for you.',
