@@ -123,6 +123,8 @@ const mantineTheme = {
       h6: {fontSize: 16, lineHeight: 1.5, fontWeight: 500},
     },
   },
+  white: '#fff',
+  black: '#1D1D1D',
   lineHeight: 1.55,
   primaryColor: 'primary',
   activeStyles: {transform: 'translateY(0)'},
