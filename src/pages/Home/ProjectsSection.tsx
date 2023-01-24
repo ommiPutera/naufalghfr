@@ -22,8 +22,12 @@ export type ProjectCardItemTypes = {
 function ProjectsHelmet() {
   return (
     <Helmet>
-      <title>Naufal - My Past Projects</title>
-      <meta name="theme-color" content="#FFFFFF" />
+      <meta
+        name="description"
+        content="Naufal - My Past Projects"
+        data-react-helmet="true"
+      />
+      <meta name="theme-color" content="#FFFFFF" data-react-helmet="true" />
     </Helmet>
   )
 }

@@ -25,8 +25,8 @@ export const WrapperLayout = styled.div`
   @media (min-width: 800px) {
     position: relative;
     .children__ {
+      padding: 0px 48px;
       height: 100%;
-      padding: 0;
     }
   }
 `

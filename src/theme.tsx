@@ -114,7 +114,7 @@ const mantineTheme = {
       h1: {
         fontSize: 104,
         lineHeight: 1.2,
-        fontWeight: 700,
+        fontWeight: 800,
       },
       h2: {fontSize: 24, lineHeight: 1.3, fontWeight: 500},
       h3: {fontSize: 22, lineHeight: 1.3, fontWeight: 500},

@@ -10,8 +10,12 @@ import {CardItemTypes} from './types'
 function ToolsHelmet() {
   return (
     <Helmet>
-      <title>Naufal - Tools & Skill Set</title>
-      <meta name="theme-color" content="#FFFFFF" />
+      <meta
+        name="description"
+        content="Naufal - Tools & Skill Set"
+        data-react-helmet="true"
+      />
+      <meta name="theme-color" content="#FFFFFF" data-react-helmet="true" />
     </Helmet>
   )
 }

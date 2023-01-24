@@ -20,7 +20,7 @@ function DefaultLayout() {
       <Header />
       <DropdownNav />
       <Container size={CONTAINER_SIZE} className="p-0">
-        <div className={clsx('children__', isOpen ? 'nav__open' : '')}>
+        <div className={clsx('children__ p-0', isOpen ? 'nav__open' : '')}>
           <Outlet />
         </div>
       </Container>
