@@ -34,20 +34,29 @@ const WrapperBackgrounds = styled.div`
     }
   }
   &.about {
+    min-height: 530px;
+    max-height: 530px;
+    overflow: hidden;
     .bg {
       height: max-content;
-      min-height: 530px;
-      max-height: 530px;
     }
   }
 
   @media (min-width: 1200px) {
-    &.home,
-    &.about {
+    &.home {
       .bg {
         height: max-content;
         min-height: 910px;
         max-height: 100vh;
+      }
+    }
+    &.about {
+      min-height: 910px;
+      max-height: 100vh;
+      .bg {
+        min-height: 910px;
+        max-height: 100vh;
+        height: max-content;
       }
     }
   }
