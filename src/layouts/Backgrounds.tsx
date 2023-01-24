@@ -29,7 +29,7 @@ const WrapperBackgrounds = styled.div`
   &.home {
     .bg {
       height: max-content;
-      min-height: 870px;
+      min-height: 910px;
       max-height: 100vh;
     }
   }
@@ -46,7 +46,7 @@ const WrapperBackgrounds = styled.div`
     &.about {
       .bg {
         height: max-content;
-        min-height: 870px;
+        min-height: 910px;
         max-height: 100vh;
       }
     }

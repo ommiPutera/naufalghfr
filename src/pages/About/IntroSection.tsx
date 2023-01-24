@@ -106,6 +106,7 @@ const Wrapper = styled.div`
   @media (min-width: 800px) {
     border-bottom: none;
     padding-bottom: 0;
+    margin-top: 12%;
     display: flex;
     flex-direction: row;
     height: 100%;

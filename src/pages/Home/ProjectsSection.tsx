@@ -167,6 +167,7 @@ const Wrapper = styled.div`
   @media (min-width: 800px) {
     border-bottom: none;
     padding-bottom: 0;
+    margin-top: 12%;
   }
 `
 const WrapperProjectsCards = styled.div`
