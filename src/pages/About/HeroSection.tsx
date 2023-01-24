@@ -8,7 +8,7 @@ function HeroSection() {
   return (
     <WrapperHero className="mobile__mt-42">
       <div className="page__title">
-        <div>
+        <div className="title__">
           <Title order={1} className="font-130 mobile__font-60 basic-animate">
             ANYTHING
           </Title>
@@ -57,7 +57,7 @@ const WrapperHero = styled.div`
     margin-top: 120px;
 
     h1 {
-      line-height: 150px;
+      line-height: 155px;
     }
 
     .page__title {
@@ -67,6 +67,15 @@ const WrapperHero = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      .title__ {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .about__me {
+          margin-left: 105px;
+        }
+      }
     }
     .section__highlight {
       text-align: left;
@@ -88,10 +97,6 @@ const WrapperHero = styled.div`
         margin-bottom: -70px;
         line-height: 30px;
       }
-    }
-
-    .about__me {
-      margin-left: 105px;
     }
   }
 `

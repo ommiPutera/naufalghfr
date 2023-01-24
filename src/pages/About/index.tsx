@@ -7,7 +7,7 @@ function About() {
   return (
     <Wrapper>
       <AboutHelmet />
-      <HeroBackgrounds route="home" imgUrl="/assets/image/heroBg.jpg" />
+      <HeroBackgrounds route="about" imgUrl="/assets/image/heroBg.jpg" />
       <HeroSection />
     </Wrapper>
   )

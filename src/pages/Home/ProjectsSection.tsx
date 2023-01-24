@@ -23,7 +23,7 @@ function ProjectsSection() {
     <Wrapper className="mt-110 mobile__mt-42" id="projects">
       <TitleSection
         highlightText="BEST PROJECTS SELECTION"
-        title={{defaultText: 'MY PAS', outlineText: 'PROJECTS'}}
+        title={{defaultText: 'MY PAST', outlineText: 'PROJECTS'}}
       />
       <Content className="mt-62">
         <AllProjectsButton />
@@ -140,6 +140,8 @@ const WrapperAllProjects = styled.div`
     padding-top: 100px;
 
     .btn__projects {
+      position: sticky;
+      top: 0;
       margin-right: 30px;
       .mantine-Button-root {
         width: 100%;

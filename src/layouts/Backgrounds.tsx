@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 type BackgroundsTypes = {
-  route: 'home' | 'contact'
+  route: 'home' | 'about'
   imgUrl: string
 }
 
@@ -26,7 +26,8 @@ const WrapperBackgrounds = styled.div`
     width: 100%;
   }
 
-  &.home {
+  &.home,
+  &.about {
     .bg {
       height: max-content;
       min-height: 910px;
