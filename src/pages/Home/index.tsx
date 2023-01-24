@@ -1,3 +1,4 @@
+import React from 'react'
 import {Helmet} from 'react-helmet'
 import styled from 'styled-components'
 import {HeroBackgrounds} from '../../layouts/Backgrounds'
@@ -6,6 +7,10 @@ import ProjectsSection from './ProjectsSection'
 import ToolsSection from './ToolsSection'
 
 function Home() {
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <Wrapper>
       <HomeHelmet />
