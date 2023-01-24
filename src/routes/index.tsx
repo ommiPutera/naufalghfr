@@ -24,7 +24,7 @@ export const ROUTES: IRouteObject[] = [
   },
   {
     label: 'PROJECT',
-    path: '/project',
+    path: '/projects',
     element: <About />,
   },
   {
@@ -48,7 +48,7 @@ export const APP_ROUTES: IRouteObject[] = [
   },
   {
     label: 'Project',
-    path: '/project',
+    path: '/projects',
     element: <About />,
   },
   {

@@ -36,10 +36,12 @@ function ProjectsSection() {
 function AllProjectsButton() {
   return (
     <WrapperAllProjects>
-      <Button size="lg" variant="default" className="btn__projects">
-        ALL PROJECTS
-        <ArrowTopRightIcon />
-      </Button>
+      <Link to="/projects">
+        <Button size="lg" variant="default" className="btn__projects">
+          ALL PROJECTS
+          <ArrowTopRightIcon />
+        </Button>
+      </Link>
     </WrapperAllProjects>
   )
 }
@@ -141,8 +143,9 @@ const WrapperAllProjects = styled.div`
 
     .btn__projects {
       position: sticky;
-      top: 0;
-      margin-right: 30px;
+      position: -webkit-sticky;
+      top: 62px;
+      margin-right: 65px;
       .mantine-Button-root {
         width: 100%;
         min-height: 64px;

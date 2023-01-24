@@ -12,9 +12,7 @@ export const growDown = keyframes`
 
 // --- Layouts ---
 export const WrapperLayout = styled.div`
-  overflow-x: hidden;
-  .children {
-    height: 100%;
+  .children__ {
     min-height: 100vh;
     padding: 0 24px;
   }
@@ -26,7 +24,8 @@ export const WrapperLayout = styled.div`
 
   @media (min-width: 800px) {
     position: relative;
-    .children {
+    .children__ {
+      height: 100%;
       padding: 0;
     }
   }

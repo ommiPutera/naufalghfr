@@ -16,12 +16,6 @@ html {
   height: 100%;
 }
 
-.sticky {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 22px;
-}
-
 a {
   color: inherit;
   text-decoration: none;
@@ -250,10 +244,10 @@ button:focus {
 }
 
 .basic-animate {
-  animation: my-awesome-beboop 1s, pause-between-iterations 0.5s linear;
+  animation: my-awesome-beboop 1s, pause-between-iterations 0.8s linear;
 }
 .basic-animate-1 {
-  animation: my-awesome-beboop 1s, pause-between-iterations 0.9s linear;
+  animation: my-awesome-beboop 1s, pause-between-iterations 1s linear;
 }
 .basic-animate-2 {
   animation: my-awesome-beboop 1s, pause-between-iterations 1.4s linear;
