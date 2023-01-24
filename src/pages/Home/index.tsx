@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import BackToTop from '../../components/BackToTop'
 import {HeroBackgrounds} from '../../layouts/Backgrounds'
 import HeroSection from './HeroSection'
 import ProjectsSection from './ProjectsSection'
@@ -16,6 +17,7 @@ function Home() {
       <HeroSection />
       <ProjectsSection />
       <ToolsSection />
+      <BackToTop />
     </Wrapper>
   )
 }

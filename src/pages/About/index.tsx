@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import BackToTop from '../../components/BackToTop'
 import {HeroBackgrounds} from '../../layouts/Backgrounds'
 import HeroSection from './HeroSection'
 import IntroSection from './IntroSection'
@@ -16,6 +17,7 @@ function About() {
       <HeroSection />
       <IntroSection />
       <WorkSection />
+      <BackToTop />
     </Wrapper>
   )
 }

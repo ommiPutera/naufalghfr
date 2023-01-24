@@ -6,7 +6,7 @@ import {getClassProps} from '../../utils/helper'
 interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode | JSX.Element
   className?: string
-  variant?: 'outline' | 'default'
+  variant?: 'outline' | 'default' | 'subtle'
   compact?: true
   size?: 'sm' | 'md' | 'lg' | 'xl'
   mobileSize?: 'sm' | 'md' | 'lg' | 'xl'
@@ -61,6 +61,9 @@ const WrapperButton = styled.div`
       background: ${({theme: {colors}}) => colors.primary[0]};
       transition: border 0.4s ease;
     }
+  }
+  .variantSubtle {
+    background: #ffff;
   }
 `
 
