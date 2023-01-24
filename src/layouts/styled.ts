@@ -15,7 +15,6 @@ export const WrapperLayout = styled.div`
   .children__ {
     min-height: 100vh;
     padding: 0 24px;
-    overflow: hidden;
   }
   .nav__open {
     filter: blur(2px);

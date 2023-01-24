@@ -54,7 +54,6 @@ function IntroSection() {
 }
 
 const Wrapper = styled.div`
-  border-bottom: 1px solid rgba(18, 18, 18, 0.15);
   padding-bottom: 48px;
   display: flex;
   flex-direction: column-reverse;
@@ -67,8 +66,12 @@ const Wrapper = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 300px;
-      height: 300px;
+      min-width: 250px;
+      max-width: 300px;
+      max-height: 300px;
+      width: max-content;
+      height: max-content;
+      min-height: 250px;
       border-radius: 100%;
       background: ${({theme: {colors}}) => colors.primary[0]};
       div {
@@ -114,7 +117,6 @@ const Wrapper = styled.div`
   }
 
   @media (min-width: 1200px) {
-    border-bottom: none;
     padding-bottom: 0;
     margin-top: 12%;
     display: flex;
