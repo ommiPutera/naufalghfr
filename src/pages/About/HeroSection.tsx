@@ -28,7 +28,7 @@ function HeroSection() {
         </div>
       </div>
       <ScrollDown className="mobile__mt-62 basic-animate-3">
-        <a href="#projects">
+        <a href="#intro">
           <Button className="btn-scroll-down">
             <ArrowDownIcon /> Scroll down
           </Button>

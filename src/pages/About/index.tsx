@@ -3,6 +3,7 @@ import {Helmet} from 'react-helmet'
 import styled from 'styled-components'
 import {HeroBackgrounds} from '../../layouts/Backgrounds'
 import HeroSection from './HeroSection'
+import IntroSection from './IntroSection'
 
 function About() {
   React.useEffect(() => {
@@ -14,6 +15,7 @@ function About() {
       <AboutHelmet />
       <HeroBackgrounds route="about" imgUrl="/assets/image/heroBg.jpg" />
       <HeroSection />
+      <IntroSection />
     </Wrapper>
   )
 }
