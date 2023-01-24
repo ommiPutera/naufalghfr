@@ -26,12 +26,22 @@ const WrapperBackgrounds = styled.div`
     width: 100%;
   }
 
-  &.home,
   &.about {
     .bg {
       height: max-content;
-      min-height: 850px;
-      max-height: 100vh;
+      min-height: 530px;
+      max-height: 530px;
+    }
+  }
+
+  @media (min-width: 800px) {
+    &.home,
+    &.about {
+      .bg {
+        height: max-content;
+        min-height: 850px;
+        max-height: 100vh;
+      }
     }
   }
 `
