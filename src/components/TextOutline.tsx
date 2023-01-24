@@ -71,7 +71,7 @@ const WrapperTextOutline = styled.div`
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     .textOutline {
       &.size__104 {
         margin-top: -22px;

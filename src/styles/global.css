@@ -97,7 +97,7 @@ button:focus {
     font-size: 60px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .font-14 {
     font-size: 14px;
   }
@@ -186,7 +186,7 @@ button:focus {
     margin-top: 102px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   .mt-12 {
     margin-top: 12px;
   }

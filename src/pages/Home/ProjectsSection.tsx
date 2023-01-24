@@ -131,7 +131,7 @@ const Content = styled.div`
   flex-direction: column-reverse;
   height: auto;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -151,7 +151,7 @@ const WrapperAllProjects = styled.div`
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     border-top: 1px solid rgba(18, 18, 18, 0.15);
     width: 25%;
     padding-top: 100px;
@@ -179,7 +179,7 @@ const Wrapper = styled.div`
   border-bottom: 1px solid rgba(18, 18, 18, 0.15);
   padding-bottom: 48px;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     border-bottom: none;
     padding-bottom: 0;
     margin-top: 12%;
@@ -189,7 +189,7 @@ const WrapperProjectsCards = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     width: 90%;
 
     .project__card:last-child {
@@ -242,7 +242,7 @@ const ProjectCard = styled.div`
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     display: flex;
     flex-direction: row;
 

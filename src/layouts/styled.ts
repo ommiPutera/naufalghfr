@@ -15,6 +15,7 @@ export const WrapperLayout = styled.div`
   .children__ {
     min-height: 100vh;
     padding: 0 24px;
+    overflow: hidden;
   }
   .nav__open {
     filter: blur(2px);
@@ -22,7 +23,7 @@ export const WrapperLayout = styled.div`
     display: none;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     position: relative;
     .children__ {
       padding: 0px 48px;
@@ -36,7 +37,7 @@ export const LeftContent = styled.div`
   display: flex;
   justify-content: start;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     width: 25%;
     text-align: left;
     display: flex;
@@ -46,7 +47,7 @@ export const LeftContent = styled.div`
 export const CenterContent = styled.div`
   width: 0%;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     width: 50%;
     text-align: center;
     display: flex;
@@ -63,7 +64,7 @@ export const RightContent = styled.div`
     display: none;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     width: 25%;
     .btn-contact {
       display: flex;

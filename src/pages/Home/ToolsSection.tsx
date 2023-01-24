@@ -89,7 +89,7 @@ const WrapperCards = styled.div`
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     border: none;
   }
 `
@@ -109,7 +109,7 @@ const WrapperCardItem = styled.div`
     height: 17.91px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     gap: 14px;
     width: max-content;
   }

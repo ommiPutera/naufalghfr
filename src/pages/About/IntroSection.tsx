@@ -114,7 +114,7 @@ const Wrapper = styled.div`
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     border-bottom: none;
     padding-bottom: 0;
     margin-top: 12%;

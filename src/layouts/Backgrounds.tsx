@@ -41,7 +41,7 @@ const WrapperBackgrounds = styled.div`
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     &.home,
     &.about {
       .bg {

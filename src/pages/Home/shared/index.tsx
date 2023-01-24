@@ -47,7 +47,7 @@ const WrapperTitleSection = styled.div`
   align-items: flex-start;
   margin-top: 42px;
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     margin-top: 120px;
     flex-direction: row;
     justify-content: space-between;
@@ -79,7 +79,7 @@ const RightContent = styled.div`
       display: none;
     }
 
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       margin-bottom: 70px;
       div {
         display: block;
@@ -91,7 +91,7 @@ const RightContent = styled.div`
     }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
   }
 `
 

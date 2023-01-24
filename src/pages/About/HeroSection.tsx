@@ -61,7 +61,7 @@ const WrapperHero = styled.div`
     line-height: 70px;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 1200px) {
     justify-content: flex-start;
     text-align: center;
     height: 70vh;
@@ -101,7 +101,7 @@ const WrapperHero = styled.div`
         background: ${({theme: {colors}}) => colors.light[0]};
       }
 
-      @media (min-width: 800px) {
+      @media (min-width: 1200px) {
         width: 100%;
         display: flex;
         flex-direction: column;
