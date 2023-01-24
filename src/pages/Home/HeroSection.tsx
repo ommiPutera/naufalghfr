@@ -1,4 +1,5 @@
 import {Container, Text, Title} from '@mantine/core'
+import {Helmet} from 'react-helmet'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import TextOutline from '../../components/TextOutline'
@@ -11,9 +12,19 @@ const certifiedLogoAssetsUrl = [
   '/assets/image/binar-logo.png',
 ]
 
+function HeroHelmet() {
+  return (
+    <Helmet>
+      <title>Naufal - Digital Product Designer</title>
+      <meta name="theme-color" content="#1D1D1D" />
+    </Helmet>
+  )
+}
+
 function HeroSection() {
   return (
     <WrapperHero className="mobile__mt-42">
+      <HeroHelmet />
       <Title order={1} className="mobile__font-60 basic-animate">
         DIGITAL PRODUCT
       </Title>

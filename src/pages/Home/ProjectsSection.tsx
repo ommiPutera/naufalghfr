@@ -7,6 +7,7 @@ import {ArrowTopRightIcon} from '../../utils/icons'
 import {propsContentProjects} from './shared/propsCollection'
 import {TitleSection} from './shared'
 import {CardItemTypes} from './types'
+import {Helmet} from 'react-helmet'
 
 export type ProjectCardItemTypes = {
   assetSrc: string
@@ -18,9 +19,19 @@ export type ProjectCardItemTypes = {
   layout: '1' | '2'
 }
 
+function ProjectsHelmet() {
+  return (
+    <Helmet>
+      <title>Naufal - My Past Projects</title>
+      <meta name="theme-color" content="#FFFFFF" />
+    </Helmet>
+  )
+}
+
 function ProjectsSection() {
   return (
     <Wrapper className="mt-110 mobile__mt-42" id="projects">
+      <ProjectsHelmet />
       <TitleSection
         highlightText="BEST PROJECTS SELECTION"
         title={{defaultText: 'MY PAST', outlineText: 'PROJECTS'}}

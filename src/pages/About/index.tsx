@@ -1,5 +1,4 @@
 import React from 'react'
-import {Helmet} from 'react-helmet'
 import styled from 'styled-components'
 import {HeroBackgrounds} from '../../layouts/Backgrounds'
 import HeroSection from './HeroSection'
@@ -12,19 +11,10 @@ function About() {
 
   return (
     <Wrapper>
-      <AboutHelmet />
       <HeroBackgrounds route="about" imgUrl="/assets/image/heroBg.jpg" />
       <HeroSection />
       <IntroSection />
     </Wrapper>
-  )
-}
-
-function AboutHelmet() {
-  return (
-    <Helmet>
-      <title>About Naufal Ghifari</title>
-    </Helmet>
   )
 }
 

@@ -1,14 +1,25 @@
 import {Grid, Text, Title} from '@mantine/core'
 import clsx from 'clsx'
+import {Helmet} from 'react-helmet'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {TitleSection} from './shared'
 import {propsContentTools} from './shared/propsCollection'
 import {CardItemTypes} from './types'
 
+function ToolsHelmet() {
+  return (
+    <Helmet>
+      <title>Naufal - Tools & Skill Set</title>
+      <meta name="theme-color" content="#FFFFFF" />
+    </Helmet>
+  )
+}
+
 function ToolsSection() {
   return (
     <Wrapper className="mt-110 mobile__mt-42">
+      <ToolsHelmet />
       <TitleSection
         reversedRow={true}
         highlightText="WHAT CAN I DO FOR YOU"
