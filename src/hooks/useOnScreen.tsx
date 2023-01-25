@@ -18,7 +18,7 @@ function useOnScreen<T extends Element>(
       observer.observe(ref.current)
     }
     return () => {
-      observer.unobserve(ref.current)
+      observer.unobserve(ref.current ?? null)
     }
   }, []) // Empty array ensures that effect is only run on mount and unmount
   return isIntersecting
