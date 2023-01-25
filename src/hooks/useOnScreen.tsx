@@ -18,9 +18,10 @@ function useOnScreen<T extends Element>(
       observer.observe(ref.current)
     }
     return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       observer.unobserve(ref.current ?? null)
     }
-  }, []) // Empty array ensures that effect is only run on mount and unmount
+  }, [ref, rootMargin]) // Empty array ensures that effect is only run on mount and unmount
   return isIntersecting
 }
 
