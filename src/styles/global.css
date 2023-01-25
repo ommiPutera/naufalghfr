@@ -57,6 +57,9 @@ button:focus {
 }
 
 @media (max-width: 768px) {
+  .mobile__font-12 {
+    font-size: 12px;
+  }
   .mobile__font-14 {
     font-size: 14px;
   }
@@ -100,8 +103,14 @@ button:focus {
     font-size: 13.5vw;
     line-height: 17.5vw;
   }
+  .mobile__font-70 {
+    font-size: 15.8vw;
+  }
 }
 @media (min-width: 1200px) {
+  .font-12 {
+    font-size: 12px;
+  }
   .font-14 {
     font-size: 14px;
   }
@@ -180,6 +189,9 @@ button:focus {
   .mobile__mt-43 {
     margin-top: 43px;
   }
+  .mobile__mt-52 {
+    margin-top: 52px;
+  }
   .mobile__mt-62 {
     margin-top: 62px;
   }
@@ -212,6 +224,9 @@ button:focus {
   .mt-62 {
     margin-top: 62px;
   }
+  .mt-72 {
+    margin-top: 72px;
+  }
   .mt-82 {
     margin-top: 82px;
   }
@@ -220,6 +235,9 @@ button:focus {
   }
   .mt-110 {
     margin-top: 110px;
+  }
+  .mt-129 {
+    margin-top: 129px;
   }
 }
 

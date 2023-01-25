@@ -6,49 +6,51 @@ import TextOutline from '../../components/TextOutline'
 import {ArrowDownIcon} from '../../utils/icons'
 
 const certifiedLogoAssetsUrl = [
-  '/assets/image/google-logo.png',
-  '/assets/image/ibm-logo.png',
-  '/assets/image/interaction-logo.png',
-  '/assets/image/binar-logo.png',
+  '/assets/logo/google-logo.png',
+  '/assets/logo/ibm-logo.png',
+  '/assets/logo/interaction-logo.png',
+  '/assets/logo/binar-logo.png',
 ]
 
 function HeroSection() {
   return (
     <WrapperHero className="mobile__mt-42">
-      <Title order={1} className="mobile__font-60 basic-animate">
+      <Title order={1} className="mobile__font-70 basic-animate">
         DIGITAL PRODUCT
       </Title>
       <TextOutline
         size="104"
         strokeColor="white"
-        className="mobile__font-60 basic-animate"
+        className="mobile__font-70 basic-animate"
       >
         DESIGNER
       </TextOutline>
       <Container size="xs" className="mobile__p-0">
         <Text
           size="lg"
-          className="mt-26 mobile__mt-62 font-20 mobile__font-14 font-400 basic-animate-1"
+          className="mt-26 mobile__mt-52 font-20 mobile__font-14 font-400 basic-animate-1"
         >
           Hi 👋 My name is Muhammad Naufal Ghifari, a Product Designer with
           experience working in B2B and B2C Company as a UIX Designer. I help
           companies to Designing human experience in using digital product’s.
         </Text>
       </Container>
-      <Certified className="mt-110 mobile__mt-62 basic-animate-2">
+      <Certified className="mt-129 mobile__mt-52 basic-animate-2">
         <Text
           size="lg"
           className="text mobile__mt-22 mobile__font-14 font-20 font-400"
         >
           Design Certified By
         </Text>
-        <Container size="xs" className="items mobile__p-0">
+        <Container size="xs" className="items__ mobile__p-0">
           {certifiedLogoAssetsUrl.map(logoUrl => (
-            <img key={logoUrl} src={logoUrl} alt="" className="logo" />
+            <div key={logoUrl} className="item__">
+              <img src={logoUrl} alt="" className="logo" />
+            </div>
           ))}
         </Container>
       </Certified>
-      <ScrollDown className="mobile__mt-62 basic-animate-3">
+      <ScrollDown className="mobile__mt-52 basic-animate-3">
         <LinkScroll
           activeClass="active"
           to="projects"
@@ -71,11 +73,11 @@ const WrapperHero = styled.div`
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin: 88px 0 88px 0;
+  margin: 36px 0 58px 0;
   color: ${({theme: {colors}}) => colors.light[0]};
 
   h1 {
-    line-height: 50px;
+    line-height: 60px;
   }
 
   @media (min-width: 1200px) {
@@ -98,29 +100,44 @@ const Certified = styled.div`
     color: ${({theme: {colors}}) => colors.light[1]};
     margin-bottom: 24px;
   }
-  .items {
+  .items__ {
     width: 100%;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    column-gap: 20px;
 
-    .logo {
-      object-fit: cover;
-      width: 100%;
+    .item__ {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+      width: fit-content;
+
+      .logo {
+        object-fit: contain;
+        width: 100%;
+      }
     }
   }
 
   @media (min-width: 1200px) {
-    .items {
+    .items__ {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 55px;
 
+      .item__ {
+        max-height: 80px;
+        width: fit-content;
+      }
+
       .logo {
-        width: 120px;
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
       }
     }
   }

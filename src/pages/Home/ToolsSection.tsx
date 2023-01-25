@@ -82,7 +82,6 @@ const WrapperCards = styled.div`
 `
 const WrapperCardItem = styled.div`
   color: ${({theme: {colors}}) => colors.light[0]};
-  min-width: 325px;
   max-width: 100%;
   min-height: 164px;
   height: max-content;

@@ -85,6 +85,7 @@ const Wrapper = styled.div`
   .order__2 {
     width: 100%;
     height: 100%;
+    margin-top: 12px;
 
     .title__ {
       display: flex;

@@ -21,17 +21,17 @@ function HeroSection() {
             PROJECTS
           </TextOutline>
         </div>
-        <div>
-          <Title className="font-700 font-16 mobile__font-14 section__highlight">
+        <div className="basic-animate-2">
+          <Title className="mobile__mt-52 font-700 font-16 mobile__font-12 section__highlight">
             ONLY BEST PROJECTS SELECTION
             <div />
           </Title>
         </div>
       </div>
-      <ScrollDown className="mobile__mt-62 basic-animate-3">
+      <ScrollDown className="mobile__mt-52 basic-animate-3">
         <LinkScroll
           activeClass="active"
-          to="intro"
+          to="projects-section"
           spy={true}
           smooth={true}
           offset={-10}
@@ -51,11 +51,21 @@ const WrapperHero = styled.div`
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin: 88px 0 88px 0;
+  margin: 36px 0 58px 0;
   color: ${({theme: {colors}}) => colors.light[0]};
 
   h1 {
     line-height: 65px;
+  }
+
+  .section__highlight {
+    line-height: 30px;
+    div {
+      display: block;
+      width: 235px;
+      height: 4px;
+      background: ${({theme: {colors}}) => colors.light[0]};
+    }
   }
 
   @media (min-width: 1200px) {

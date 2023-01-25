@@ -24,42 +24,45 @@ const WrapperBackgrounds = styled.div`
   .bg {
     object-fit: cover;
     width: 100%;
+    height: 100%;
   }
 
   &.home {
+    min-height: 870px;
+    max-height: 93vh;
+    height: fit-content;
+    overflow: hidden;
     .bg {
+      width: auto;
       height: max-content;
-      min-height: 910px;
-      max-height: 100vh;
     }
   }
   &.about,
   &.projects {
-    min-height: 515px;
-    max-height: 525px;
+    min-height: 470px;
+    max-height: 485px;
     overflow: hidden;
     .bg {
-      min-height: 515px;
-      max-height: 525px;
-      height: fit-content;
+      width: auto;
+      height: max-content;
     }
   }
 
   @media (min-width: 1200px) {
     &.home {
+      min-height: 930px;
+      max-height: 100vh;
       .bg {
+        width: 100%;
         height: max-content;
-        min-height: 910px;
-        max-height: 100vh;
       }
     }
     &.about,
     &.projects {
-      min-height: 910px;
+      min-height: 930px;
       max-height: 100vh;
       .bg {
-        min-height: 910px;
-        max-height: 100vh;
+        width: 100%;
         height: max-content;
       }
     }
