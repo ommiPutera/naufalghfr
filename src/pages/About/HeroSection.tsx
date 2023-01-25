@@ -1,28 +1,12 @@
 import {Title} from '@mantine/core'
-import {Helmet} from 'react-helmet'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import TextOutline from '../../components/TextOutline'
 import {ArrowDownIcon} from '../../utils/icons'
 
-function HeroHelmet() {
-  return (
-    <Helmet>
-      <title>About Naufal Ghifari</title>
-      <meta
-        name="description"
-        content="About Naufal Ghifari"
-        data-react-helmet="true"
-      />
-      <meta name="theme-color" content="#1D1D1D" data-react-helmet="true" />
-    </Helmet>
-  )
-}
-
 function HeroSection() {
   return (
     <WrapperHero className="mobile__mt-42">
-      <HeroHelmet />
       <div className="page__title">
         <div className="title__">
           <Title order={1} className="font-130 mobile__font-60 basic-animate">

@@ -1,21 +1,11 @@
 import {Text} from '@mantine/core'
 import React from 'react'
-import {Helmet} from 'react-helmet'
 import styled from 'styled-components'
 import {TitleSection} from '../Home/shared'
-
-function WorkHelmet() {
-  return (
-    <Helmet>
-      <meta name="theme-color" content="#FFFFFF" data-react-helmet="true" />
-    </Helmet>
-  )
-}
 
 function WorkSection() {
   return (
     <Wrapper className="mt-110 mobile__mt-42" id="projects">
-      <WorkHelmet />
       <TitleSection
         reversedRow={true}
         highlightText="BEST PROJECTS SELECTION"

@@ -1,21 +1,11 @@
 import {Text} from '@mantine/core'
-import {Helmet} from 'react-helmet'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {ArrowTopRightIcon} from '../../utils/icons'
 
-function IntroHelmet() {
-  return (
-    <Helmet>
-      <meta name="theme-color" content="#FFFFFF" data-react-helmet="true" />
-    </Helmet>
-  )
-}
-
 function IntroSection() {
   return (
     <Wrapper className="mt-110 mobile__mt-42" id="intro">
-      <IntroHelmet />
       <div className="order__1">
         <Link to="/" className="wrapper__">
           <div>
