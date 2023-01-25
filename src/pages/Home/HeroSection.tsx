@@ -1,4 +1,5 @@
 import {Container, Text, Title} from '@mantine/core'
+import {Link as LinkScroll} from 'react-scroll'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import TextOutline from '../../components/TextOutline'
@@ -48,11 +49,18 @@ function HeroSection() {
         </Container>
       </Certified>
       <ScrollDown className="mobile__mt-62 basic-animate-3">
-        <a href="#projects">
+        <LinkScroll
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-10}
+          duration={300}
+        >
           <Button className="btn-scroll-down">
             <ArrowDownIcon /> Scroll down
           </Button>
-        </a>
+        </LinkScroll>
       </ScrollDown>
     </WrapperHero>
   )

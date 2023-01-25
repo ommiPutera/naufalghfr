@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {animateScroll as scroll} from 'react-scroll'
 import {ArrowDownIcon} from '../utils/icons'
 import {Button} from './Button'
 
@@ -21,7 +22,14 @@ function BackToTop() {
   if (scrollPosition > 370) {
     return (
       <WrapperBackToTop className="basic-animate">
-        <Button variant="subtle" onClick={() => window.scrollTo(0, 0)}>
+        <Button
+          variant="subtle"
+          onClick={() =>
+            scroll.scrollToTop({
+              smooth: 'easeInOutQuart',
+            })
+          }
+        >
           <div className="icon__">
             <ArrowDownIcon />
           </div>

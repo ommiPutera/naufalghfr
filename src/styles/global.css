@@ -248,7 +248,7 @@ button:focus {
 }
 
 .basic-animate {
-  animation: my-awesome-beboop 1s, pause-between-iterations 0.8s linear;
+  animation: my-awesome-beboop 0.7s, pause-between-iterations 0.7s linear;
 }
 .basic-animate-1 {
   animation: my-awesome-beboop 1s, pause-between-iterations 1s linear;

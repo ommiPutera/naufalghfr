@@ -22,15 +22,11 @@ function AboutHelmet() {
 
 function About() {
   React.useEffect(() => {
-    window.scrollBy({
-      top: 0,
-      left: 0,
-      behavior: 'auto',
-    })
+    window.scroll(0, 0)
   }, [])
 
   return (
-    <Wrapper>
+    <Wrapper id="about-section">
       <AboutHelmet />
       <HeroBackgrounds route="about" imgUrl="/assets/image/heroBg.jpg" />
       <HeroSection />
