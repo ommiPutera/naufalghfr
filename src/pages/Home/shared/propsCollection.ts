@@ -65,7 +65,7 @@ const propsContentTools: CardItemTypes[] = [
     layout: '1',
   },
   {
-    assetSrc: '/assets/icons/icon4.svg',
+    assetSrc: '/assets/icons/icon5.svg',
     title: 'Icon design',
     to: '/',
     desc: 'Have a design ready to build? I can do that for you.',
