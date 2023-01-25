@@ -147,12 +147,14 @@ const WrapperWorkItem = styled.div`
         .start {
           font-size: 14px;
           p:first-child {
+            display: block;
             padding-bottom: 7px;
           }
           margin-right: 55px;
           text-align: center;
         }
         .dash {
+          display: none;
           position: relative;
           right: 0;
           top: 0;
@@ -160,6 +162,7 @@ const WrapperWorkItem = styled.div`
         .end {
           font-size: 14px;
           p:first-child {
+            display: block;
             padding-bottom: 7px;
           }
           margin-left: 55px;
