@@ -14,7 +14,10 @@ function HomeHelmet() {
     <Helmet>
       <title>{themeColor} Naufal - Digital Product Designer</title>
       <meta name="description" content="Naufal - Digital Product Designer" />
-      <meta name="theme-color" content={themeColor} />
+      <meta
+        name="theme-color"
+        content={themeColor === '#1D1D1D' ? '#1D1D1D' : '#fff'}
+      />
     </Helmet>
   )
 }
