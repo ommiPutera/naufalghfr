@@ -5,8 +5,14 @@ import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import {ArrowTopRightIcon} from '../../utils/icons'
 import {propsContentProjects} from './props'
+import Loadable from 'react-loadable'
 import {TitleSection} from './shared'
 import {CardItemTypes} from './types'
+
+const Projects = Loadable({
+  loader: () => import('../Projects'),
+  loading: () => <></>,
+})
 
 export type ProjectCardItemTypes = {
   assetSrc: string
@@ -41,6 +47,7 @@ function AllProjectsButton() {
           size="lg"
           variant="default"
           className="btn__projects"
+          onMouseOver={() => Projects.preload()}
           onClick={() => window.scroll(0, 0)}
         >
           ALL PROJECTS

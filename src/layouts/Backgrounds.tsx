@@ -69,4 +69,4 @@ const WrapperBackgrounds = styled.div`
   }
 `
 
-export {HeroBackgrounds}
+export default HeroBackgrounds

@@ -1,7 +1,16 @@
 import React from 'react'
-import About from '../pages/About'
 import Home from '../pages/Home'
-import Projects from '../pages/Projects'
+import Loadable from 'react-loadable'
+
+const Projects = Loadable({
+  loader: () => import('../pages/Projects'),
+  loading: () => <></>,
+})
+
+const About = Loadable({
+  loader: () => import('../pages/About'),
+  loading: () => <></>,
+})
 
 interface IRouteObject {
   path: string
@@ -22,11 +31,17 @@ export const ROUTES: IRouteObject[] = [
     label: 'ABOUT',
     path: '/about',
     element: <About />,
+    handlePreload: () => {
+      About.preload()
+    },
   },
   {
     label: 'PROJECT',
     path: '/projects',
     element: <Projects />,
+    handlePreload: () => {
+      Projects.preload()
+    },
   },
   {
     label: 'CONTACT',
@@ -46,11 +61,17 @@ export const APP_ROUTES: IRouteObject[] = [
     label: 'About',
     path: '/about',
     element: <About />,
+    handlePreload: () => {
+      About.preload()
+    },
   },
   {
     label: 'Project',
     path: '/projects',
     element: <Projects />,
+    handlePreload: () => {
+      Projects.preload()
+    },
   },
   {
     label: 'Contact',
