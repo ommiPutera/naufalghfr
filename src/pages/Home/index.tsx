@@ -1,5 +1,6 @@
 import React from 'react'
 import {Helmet} from 'react-helmet'
+import {useInView} from 'react-intersection-observer'
 import styled from 'styled-components'
 import BackToTop from '../../components/BackToTop'
 import {HeroBackgrounds} from '../../layouts/Backgrounds'
@@ -23,6 +24,19 @@ function HomeHelmet() {
 }
 
 function Home() {
+  const {setThemeColor} = useThemeColorStore(state => state)
+  const {ref, inView} = useInView({
+    threshold: 0,
+  })
+
+  React.useEffect(() => {
+    if (inView) {
+      setThemeColor('#1D1D1D')
+    } else {
+      setThemeColor('#fff')
+    }
+  }, [inView, setThemeColor])
+
   React.useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -30,8 +44,10 @@ function Home() {
   return (
     <Wrapper>
       <HomeHelmet />
-      <HeroBackgrounds route="home" imgUrl="/assets/image/heroBg.jpg" />
-      <HeroSection />
+      <div ref={ref}>
+        <HeroBackgrounds route="home" imgUrl="/assets/image/heroBg.jpg" />
+        <HeroSection />
+      </div>
       <ProjectsSection />
       <ToolsSection />
       <BackToTop />

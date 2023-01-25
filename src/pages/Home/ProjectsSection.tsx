@@ -7,9 +7,6 @@ import {ArrowTopRightIcon} from '../../utils/icons'
 import {propsContentProjects} from './shared/propsCollection'
 import {TitleSection} from './shared'
 import {CardItemTypes} from './types'
-import React from 'react'
-import useOnScreen from '../../hooks/useOnScreen'
-import {useThemeColorStore} from '../../store/themeStore'
 
 export type ProjectCardItemTypes = {
   assetSrc: string
@@ -22,20 +19,8 @@ export type ProjectCardItemTypes = {
 }
 
 function ProjectsSection() {
-  const {setThemeColor} = useThemeColorStore(state => state)
-  const ref: any = React.useRef<HTMLDivElement>()
-  const onScreen: boolean = useOnScreen<HTMLDivElement>(ref, '-100px')
-
-  React.useEffect(() => {
-    if (onScreen) {
-      setThemeColor('#fff')
-    } else {
-      setThemeColor('#1D1D1D')
-    }
-  }, [onScreen, setThemeColor])
-
   return (
-    <Wrapper className="mt-110 mobile__mt-42" id="projects" ref={ref}>
+    <Wrapper className="mt-110 mobile__mt-42" id="projects">
       <TitleSection
         highlightText="BEST PROJECTS SELECTION"
         title={{defaultText: 'MY PAST', outlineText: 'PROJECTS'}}
