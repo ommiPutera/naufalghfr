@@ -22,7 +22,11 @@ function AboutHelmet() {
 
 function About() {
   React.useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollBy({
+      top: 0,
+      left: 0,
+      behavior: 'auto',
+    })
   }, [])
 
   return (

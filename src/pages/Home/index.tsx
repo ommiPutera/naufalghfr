@@ -13,7 +13,7 @@ function HomeHelmet() {
   const {themeColor} = useThemeColorStore(state => state)
   return (
     <Helmet>
-      <title>{themeColor} Naufal - Digital Product Designer</title>
+      <title>Naufal - Digital Product Designer</title>
       <meta name="description" content="Naufal - Digital Product Designer" />
       <meta
         name="theme-color"
@@ -38,7 +38,11 @@ function Home() {
   }, [inView, setThemeColor])
 
   React.useEffect(() => {
-    window.scrollTo(0, 0)
+    window.scrollBy({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
   }, [])
 
   return (
