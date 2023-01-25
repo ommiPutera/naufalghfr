@@ -13,12 +13,8 @@ function HomeHelmet() {
   return (
     <Helmet>
       <title>{themeColor} Naufal - Digital Product Designer</title>
-      <meta
-        name="description"
-        content="Naufal - Digital Product Designer"
-        data-react-helmet="true"
-      />
-      <meta name="theme-color" content={themeColor} data-react-helmet="true" />
+      <meta name="description" content="Naufal - Digital Product Designer" />
+      <meta name="theme-color" content={themeColor} />
     </Helmet>
   )
 }
