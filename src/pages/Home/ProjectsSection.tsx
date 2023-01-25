@@ -36,7 +36,6 @@ function ProjectsSection() {
 
   return (
     <Wrapper className="mt-110 mobile__mt-42" id="projects" ref={ref}>
-      <p>{onScreen}</p>
       <TitleSection
         highlightText="BEST PROJECTS SELECTION"
         title={{defaultText: 'MY PAST', outlineText: 'PROJECTS'}}
