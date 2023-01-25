@@ -36,10 +36,6 @@ function Projects() {
     }
   }, [inView, setThemeColor])
 
-  React.useEffect(() => {
-    window.scroll(0, 0)
-  }, [])
-
   return (
     <Wrapper>
       <ProjectsHelmet />

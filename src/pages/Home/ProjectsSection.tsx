@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import {ArrowTopRightIcon} from '../../utils/icons'
-import {propsContentProjects} from './shared/propsCollection'
+import {propsContentProjects} from './props'
 import {TitleSection} from './shared'
 import {CardItemTypes} from './types'
 
@@ -37,7 +37,12 @@ function AllProjectsButton() {
   return (
     <WrapperAllProjects>
       <Link to="/projects">
-        <Button size="lg" variant="default" className="btn__projects">
+        <Button
+          size="lg"
+          variant="default"
+          className="btn__projects"
+          onClick={() => window.scroll(0, 0)}
+        >
           ALL PROJECTS
           <ArrowTopRightIcon />
         </Button>

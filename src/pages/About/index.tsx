@@ -37,10 +37,6 @@ function About() {
     }
   }, [inView, setThemeColor])
 
-  React.useEffect(() => {
-    window.scroll(0, 0)
-  }, [])
-
   return (
     <Wrapper id="about-section">
       <AboutHelmet />

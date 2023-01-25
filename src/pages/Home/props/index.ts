@@ -7,7 +7,7 @@ const propsContentProjects: CardItemTypes[] = [
     to: '/project',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'Mobile Apps',
-    animate: 'basic-animate-2',
+    animate: '',
     layout: '1',
   },
   {
@@ -16,7 +16,7 @@ const propsContentProjects: CardItemTypes[] = [
     to: '/project',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'Interface & Website',
-    animate: 'basic-animate-3',
+    animate: '',
     layout: '2',
   },
   {
@@ -25,7 +25,7 @@ const propsContentProjects: CardItemTypes[] = [
     to: '/project',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'case study & interface',
-    animate: 'basic-animate-2',
+    animate: '',
     layout: '1',
   },
   {
@@ -34,7 +34,7 @@ const propsContentProjects: CardItemTypes[] = [
     to: '/project',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'Interface & Website',
-    animate: 'basic-animate-3',
+    animate: '',
     layout: '2',
   },
 ]

@@ -3,7 +3,7 @@ import clsx from 'clsx'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {TitleSection} from './shared'
-import {propsContentTools} from './shared/propsCollection'
+import {propsContentTools} from './props'
 import {CardItemTypes} from './types'
 
 function ToolsSection() {
