@@ -80,7 +80,9 @@ const WrapperCards = styled.div`
   padding-top: 26px;
   position: relative;
   > div {
-    > div:hover {
+    > div:hover,
+    div:active,
+    div:focus {
       > div {
         cursor: pointer;
         transition: 0.3s;
@@ -103,6 +105,7 @@ const WrapperCardItem = styled.div`
   padding: 30px;
   border-radius: 13px;
   background: ${({theme: {colors}}) => colors.dark[9]};
+  -webkit-tap-highlight-color: transparent;
 
   img {
     width: 42px;

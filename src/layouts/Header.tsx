@@ -106,6 +106,7 @@ const Logo = styled.nav`
   gap: 8px;
   cursor: pointer;
   height: 100%;
+  -webkit-tap-highlight-color: transparent;
 
   a {
     font-weight: 400;

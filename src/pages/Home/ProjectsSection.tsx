@@ -120,7 +120,9 @@ function ProjectCardItem({
         </div>
       </div>
       <div className={clsx(layout === '1' ? 'right__' : 'left__', 'preview__')}>
-        <img src={assetSrc} alt="" className={animate} />
+        <Link to={to}>
+          <img src={assetSrc} alt="" className={animate} />
+        </Link>
       </div>
     </ProjectCard>
   )
@@ -234,6 +236,7 @@ const ProjectCard = styled.div`
     width: 100%;
     height: 100%;
     margin: auto;
+    cursor: pointer;
 
     img {
       width: 100%;

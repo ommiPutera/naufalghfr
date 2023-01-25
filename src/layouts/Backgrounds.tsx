@@ -34,11 +34,13 @@ const WrapperBackgrounds = styled.div`
     }
   }
   &.about {
-    min-height: 530px;
-    max-height: 530px;
+    min-height: 515px;
+    max-height: 525px;
     overflow: hidden;
     .bg {
-      height: max-content;
+      min-height: 515px;
+      max-height: 525px;
+      height: fit-content;
     }
   }
 

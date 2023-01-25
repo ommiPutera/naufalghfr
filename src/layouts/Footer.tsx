@@ -82,7 +82,9 @@ const WrapperFooter = styled.footer`
         height: 20px;
       }
 
-      :hover {
+      :hover,
+      :focus,
+      :active {
         cursor: pointer;
         background: ${({theme: {colors}}) => colors.primary[0]};
       }

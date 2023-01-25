@@ -1,4 +1,5 @@
 import {Button} from '@mantine/core'
+import React from 'react'
 import {Link, useLocation} from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -8,6 +9,10 @@ function NoMatchPage() {
     .replace(/http:|https:|/gi, '')
     .replace('//', '')
     .replace(`${pathname.toLowerCase()}`, '')
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <WrapperPage>

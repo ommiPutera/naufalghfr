@@ -4,7 +4,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/kenari-apps.jpg',
     title: 'Kenari Apps',
-    to: '/',
+    to: '/project',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'Mobile Apps',
     animate: 'basic-animate-2',
@@ -13,7 +13,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/ruang-alternative.jpg',
     title: 'Ruang Alternative',
-    to: '/',
+    to: '/project',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'Interface & Website',
     animate: 'basic-animate-3',
@@ -22,7 +22,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/mental-health-case-study.jpg',
     title: 'Mental health Case Study',
-    to: '/',
+    to: '/project',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'case study & interface',
     animate: 'basic-animate-2',
@@ -31,7 +31,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/kenari-admin-site.jpg',
     title: 'Kenari Admin Site',
-    to: '/',
+    to: '/project',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'Interface & Website',
     animate: 'basic-animate-3',

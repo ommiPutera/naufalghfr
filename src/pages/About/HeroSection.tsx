@@ -63,7 +63,7 @@ const WrapperHero = styled.div`
   color: ${({theme: {colors}}) => colors.light[0]};
 
   h1 {
-    line-height: 70px;
+    line-height: 65px;
   }
 
   @media (min-width: 1200px) {
