@@ -55,7 +55,7 @@ const WrapperBackToTop = styled.div`
   }
 
   @media (min-width: 1200px) {
-    visibility: hidden;
+    visibility: visible;
   }
 `
 
