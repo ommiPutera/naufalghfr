@@ -11,19 +11,19 @@ function HeroSection() {
       <div className="page__title">
         <div className="title__">
           <Title order={1} className="font-130 mobile__font-60 basic-animate">
-            ANYTHING
+            MY PAST
           </Title>
           <TextOutline
             size="130"
             strokeColor="white"
-            className="about__me font-130 mobile__font-60 basic-animate"
+            className="font-130 mobile__font-60 basic-animate"
           >
-            ABOUT ME
+            PROJECTS
           </TextOutline>
         </div>
         <div>
           <Title className="font-700 font-16 mobile__font-14 section__highlight">
-            ABOUT & EXPERIENCE
+            ONLY BEST PROJECTS SELECTION
             <div />
           </Title>
         </div>
@@ -80,9 +80,6 @@ const WrapperHero = styled.div`
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        .about__me {
-          margin-left: 105px;
-        }
       }
     }
     .section__highlight {

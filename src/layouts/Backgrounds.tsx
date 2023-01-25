@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 type BackgroundsTypes = {
-  route: 'home' | 'about'
+  route: 'home' | 'about' | 'projects'
   imgUrl: string
 }
 
@@ -33,7 +33,8 @@ const WrapperBackgrounds = styled.div`
       max-height: 100vh;
     }
   }
-  &.about {
+  &.about,
+  &.projects {
     min-height: 515px;
     max-height: 525px;
     overflow: hidden;
@@ -52,7 +53,8 @@ const WrapperBackgrounds = styled.div`
         max-height: 100vh;
       }
     }
-    &.about {
+    &.about,
+    &.projects {
       min-height: 910px;
       max-height: 100vh;
       .bg {

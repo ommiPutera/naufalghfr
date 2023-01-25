@@ -89,7 +89,7 @@ const RightContent = styled.div`
       margin-bottom: 70px;
       div {
         display: block;
-        width: 405px;
+        width: 485px;
         height: 4.76px;
         margin-top: 11px;
         background: ${({theme: {colors}}) => colors.dark[9]};

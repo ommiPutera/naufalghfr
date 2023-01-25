@@ -1,6 +1,7 @@
 import React from 'react'
 import About from '../pages/About'
 import Home from '../pages/Home'
+import Projects from '../pages/Projects'
 
 interface IRouteObject {
   path: string
@@ -25,7 +26,7 @@ export const ROUTES: IRouteObject[] = [
   {
     label: 'PROJECT',
     path: '/projects',
-    element: <About />,
+    element: <Projects />,
   },
   {
     label: 'CONTACT',
@@ -49,7 +50,7 @@ export const APP_ROUTES: IRouteObject[] = [
   {
     label: 'Project',
     path: '/projects',
-    element: <About />,
+    element: <Projects />,
   },
   {
     label: 'Contact',

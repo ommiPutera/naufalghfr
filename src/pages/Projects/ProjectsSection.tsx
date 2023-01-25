@@ -4,9 +4,8 @@ import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import {ArrowTopRightIcon} from '../../utils/icons'
-import {propsContentProjects} from './shared/propsCollection'
-import {TitleSection} from './shared'
-import {CardItemTypes} from './types'
+import {CardItemTypes} from '../Home/types'
+import {propsContentProjects} from './props/collection'
 
 export type ProjectCardItemTypes = {
   assetSrc: string
@@ -21,28 +20,24 @@ export type ProjectCardItemTypes = {
 function ProjectsSection() {
   return (
     <Wrapper className="mt-100 mobile__mt-42" id="projects">
-      <TitleSection
-        highlightText="BEST PROJECTS SELECTION"
-        title={{defaultText: 'MY PAST', outlineText: 'PROJECTS'}}
-      />
       <Content className="mt-62">
-        <AllProjectsButton />
+        <RandomSelectionButton />
         <ProjectsCards />
       </Content>
     </Wrapper>
   )
 }
 
-function AllProjectsButton() {
+function RandomSelectionButton() {
   return (
-    <WrapperAllProjects>
+    <WrapperRandomSelection>
       <Link to="/projects">
-        <Button size="lg" variant="default" className="btn__projects">
-          ALL PROJECTS
+        <Button size="lg" variant="default" className="btn__random">
+          RANDOM SELECTION
           <ArrowTopRightIcon />
         </Button>
       </Link>
-    </WrapperAllProjects>
+    </WrapperRandomSelection>
   )
 }
 
@@ -125,9 +120,9 @@ const Content = styled.div`
   }
 `
 
-const WrapperAllProjects = styled.div`
+const WrapperRandomSelection = styled.div`
   padding-top: 26px;
-  .btn__projects {
+  .btn__random {
     .mantine-Button-root {
       width: 100%;
       min-height: 48px;
@@ -143,7 +138,7 @@ const WrapperAllProjects = styled.div`
     width: 25%;
     padding-top: 100px;
 
-    .btn__projects {
+    .btn__random {
       position: sticky;
       position: -webkit-sticky;
       top: 62px;
@@ -153,7 +148,7 @@ const WrapperAllProjects = styled.div`
         min-height: 64px;
       }
       .mantine-Button-label {
-        padding: 0 35px;
+        padding: 0px;
         font-weight: 400;
         font-size: 20px;
         gap: 16px;
@@ -163,11 +158,7 @@ const WrapperAllProjects = styled.div`
 `
 
 const Wrapper = styled.div`
-  border-bottom: 1px solid rgba(18, 18, 18, 0.15);
-  padding-bottom: 48px;
-
   @media (min-width: 1200px) {
-    border-bottom: none;
     padding-bottom: 0;
     margin-top: 11%;
   }
@@ -235,10 +226,10 @@ const ProjectCard = styled.div`
     flex-direction: row;
 
     .left__ {
-      order: 1;
+      order: 2;
     }
     .right__ {
-      order: 2;
+      order: 1;
     }
 
     .title__ {
