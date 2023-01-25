@@ -7,7 +7,9 @@ import {ArrowTopRightIcon} from '../../utils/icons'
 import {propsContentProjects} from './shared/propsCollection'
 import {TitleSection} from './shared'
 import {CardItemTypes} from './types'
-import {Helmet} from 'react-helmet'
+import React from 'react'
+import useOnScreen from '../../hooks/useOnScreen'
+import {useThemeColorStore} from '../../store/themeStore'
 
 export type ProjectCardItemTypes = {
   assetSrc: string
@@ -19,23 +21,22 @@ export type ProjectCardItemTypes = {
   layout: '1' | '2'
 }
 
-function ProjectsHelmet() {
-  return (
-    <Helmet>
-      <meta
-        name="description"
-        content="Naufal - My Past Projects"
-        data-react-helmet="true"
-      />
-      <meta name="theme-color" content="#FFFFFF" data-react-helmet="true" />
-    </Helmet>
-  )
-}
-
 function ProjectsSection() {
+  const {setThemeColor} = useThemeColorStore(state => state)
+  const ref: any = React.useRef<HTMLDivElement>()
+  const onScreen: boolean = useOnScreen<HTMLDivElement>(ref, '-100px')
+
+  React.useEffect(() => {
+    if (onScreen) {
+      setThemeColor('#fff')
+    } else {
+      setThemeColor('#1D1D1D')
+    }
+  }, [onScreen, setThemeColor])
+
   return (
-    <Wrapper className="mt-110 mobile__mt-42" id="projects">
-      <ProjectsHelmet />
+    <Wrapper className="mt-110 mobile__mt-42" id="projects" ref={ref}>
+      <p>{onScreen}</p>
       <TitleSection
         highlightText="BEST PROJECTS SELECTION"
         title={{defaultText: 'MY PAST', outlineText: 'PROJECTS'}}

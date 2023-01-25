@@ -1,10 +1,27 @@
 import React from 'react'
+import {Helmet} from 'react-helmet'
 import styled from 'styled-components'
 import BackToTop from '../../components/BackToTop'
 import {HeroBackgrounds} from '../../layouts/Backgrounds'
+import {useThemeColorStore} from '../../store/themeStore'
 import HeroSection from './HeroSection'
 import ProjectsSection from './ProjectsSection'
 import ToolsSection from './ToolsSection'
+
+function HomeHelmet() {
+  const {themeColor} = useThemeColorStore(state => state)
+  return (
+    <Helmet>
+      <title>{themeColor} Naufal - Digital Product Designer</title>
+      <meta
+        name="description"
+        content="Naufal - Digital Product Designer"
+        data-react-helmet="true"
+      />
+      <meta name="theme-color" content={themeColor} data-react-helmet="true" />
+    </Helmet>
+  )
+}
 
 function Home() {
   React.useEffect(() => {
@@ -13,6 +30,7 @@ function Home() {
 
   return (
     <Wrapper>
+      <HomeHelmet />
       <HeroBackgrounds route="home" imgUrl="/assets/image/heroBg.jpg" />
       <HeroSection />
       <ProjectsSection />
