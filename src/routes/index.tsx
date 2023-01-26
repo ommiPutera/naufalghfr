@@ -1,6 +1,7 @@
 import React from 'react'
-import Home from '../pages/Home'
 import Loadable from 'react-loadable'
+import Contact from '../pages/Contact'
+import Home from '../pages/Home'
 
 const Projects = Loadable({
   loader: () => import('../pages/Projects'),
@@ -46,7 +47,7 @@ export const ROUTES: IRouteObject[] = [
   {
     label: 'CONTACT',
     path: '/contact',
-    element: <About />,
+    element: <Contact />,
   },
 ]
 
@@ -76,6 +77,6 @@ export const APP_ROUTES: IRouteObject[] = [
   {
     label: 'Contact',
     path: '/contact',
-    element: <About />,
+    element: <Contact />,
   },
 ]

@@ -29,6 +29,8 @@ function TextOutline({children, size, className, strokeColor}: Props) {
 const WrapperTextOutline = styled.div`
   .textOutline {
     display: flex;
+    position: relative;
+    width: fit-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -63,7 +65,7 @@ const WrapperTextOutline = styled.div`
     div {
       display: block;
       z-index: -1;
-      width: 104%;
+      width: 105%;
       height: 14px;
       background: ${({theme: {colors}}) => colors.primary[0]};
       margin-top: -15px;

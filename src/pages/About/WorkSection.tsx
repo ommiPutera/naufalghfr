@@ -66,8 +66,6 @@ function WorkItem({
 }
 
 const Wrapper = styled.div`
-  padding-bottom: 48px;
-
   @media (min-width: 1200px) {
     border-bottom: none;
     padding-bottom: 0;
