@@ -19,7 +19,7 @@ function BackToTop() {
     }
   }, [])
 
-  if (scrollPosition > 370) {
+  if (scrollPosition > 240) {
     return (
       <WrapperBackToTop className="basic-animate">
         <Button

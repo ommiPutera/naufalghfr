@@ -71,8 +71,8 @@ const WrapperHero = styled.div`
   @media (min-width: 1200px) {
     justify-content: flex-start;
     text-align: center;
-    height: 70vh;
-    margin-top: 120px;
+    height: 100%;
+    margin-top: 80px;
 
     h1 {
       line-height: 155px;
@@ -81,6 +81,7 @@ const WrapperHero = styled.div`
     .page__title {
       width: 100%;
       height: 100%;
+      margin-top: 50px;
       margin-bottom: 230px;
       display: flex;
       justify-content: space-between;

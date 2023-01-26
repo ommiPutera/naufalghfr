@@ -84,7 +84,7 @@ const WrapperHero = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 75vh;
+    height: 100%;
     margin: 62px 0 62px 0;
 
     h1 {

@@ -176,12 +176,12 @@ const WrapperAllProjects = styled.div`
 
 const Wrapper = styled.div`
   border-bottom: 1px solid rgba(18, 18, 18, 0.15);
-  padding-bottom: 48px;
+  margin-top: 85px;
 
   @media (min-width: 1200px) {
     border-bottom: none;
     padding-bottom: 0;
-    margin-top: 11%;
+    margin-top: 80px;
   }
 `
 const WrapperProjectsCards = styled.div`

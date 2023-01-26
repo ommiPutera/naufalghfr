@@ -37,7 +37,7 @@ function Contact() {
   }, [inView, setThemeColor])
 
   return (
-    <Wrapper id="contact-section">
+    <Wrapper>
       <ContactHelmet />
       <div ref={ref}>
         <HeroBackgrounds route="contact" imgUrl="/assets/image/heroBg.jpg" />

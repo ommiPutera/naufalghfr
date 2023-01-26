@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import {ArrowTopRightIcon} from '../../utils/icons'
-import {TitleSection} from '../Home/shared'
 import {CardItemTypes} from '../Home/types'
 import {propsContentProjects} from './props/collection'
 
@@ -21,12 +20,6 @@ export type ProjectCardItemTypes = {
 function ProjectsSection() {
   return (
     <Wrapper className="mt-100 mobile__mt-42" id="projects-section">
-      <div className="title__">
-        <TitleSection
-          highlightText="BEST PROJECTS SELECTION"
-          title={{defaultText: 'MY PAST', outlineText: 'PROJECTS'}}
-        />
-      </div>
       <Content className="mt-62">
         <RandomSelectionButton />
         <ProjectsCards />
@@ -165,21 +158,18 @@ const WrapperRandomSelection = styled.div`
 `
 
 const Wrapper = styled.div`
-  .title__ {
-    display: block;
-  }
   @media (min-width: 1200px) {
     padding-bottom: 0;
-    margin-top: 11%;
-
-    .title__ {
-      display: none;
-    }
+    margin-top: 9%;
   }
 `
 const WrapperProjectsCards = styled.div`
   display: flex;
   flex-direction: column;
+
+  .project__card:first-child {
+    border-top: none;
+  }
 
   @media (min-width: 1200px) {
     width: 90%;

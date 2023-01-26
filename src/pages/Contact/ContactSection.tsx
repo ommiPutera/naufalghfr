@@ -62,12 +62,12 @@ const Wrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 250px;
-        max-width: 300px;
-        max-height: 300px;
+        min-width: 289px;
+        max-width: 289px;
+        max-height: 289px;
         width: max-content;
         height: max-content;
-        min-height: 250px;
+        min-height: 289px;
         border-radius: 100%;
         background: ${({theme: {colors}}) => colors.primary[0]};
 
@@ -132,21 +132,20 @@ const Wrapper = styled.div`
 
   @media (min-width: 1200px) {
     padding-bottom: 0;
-    margin-top: 12%;
+    margin-top: 9%;
     display: flex;
     height: 100%;
     gap: 60px;
 
     .order__1 {
       width: 100%;
-      display: flex;
-      justify-content: space-between;
-      gap: 40px;
-      margin-top: 0;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 4%;
 
       > div:first-child {
         width: 50%;
-        display: flex;
+        flex-direction: row;
         align-items: center;
       }
       > div:last-child {

@@ -109,7 +109,7 @@ const Wrapper = styled.div`
 
   @media (min-width: 1200px) {
     padding-bottom: 0;
-    margin-top: 12%;
+    margin-top: 9%;
     display: flex;
     flex-direction: row;
     height: 100%;

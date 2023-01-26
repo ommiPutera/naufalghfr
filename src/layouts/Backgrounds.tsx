@@ -28,8 +28,8 @@ const WrapperBackgrounds = styled.div`
   }
 
   &.home {
-    min-height: 870px;
-    max-height: 93vh;
+    min-height: 880px;
+    max-height: 880px;
     height: fit-content;
     overflow: hidden;
     .bg {
@@ -51,8 +51,8 @@ const WrapperBackgrounds = styled.div`
 
   @media (min-width: 1200px) {
     &.home {
-      min-height: 930px;
-      max-height: 100vh;
+      min-height: 895px;
+      max-height: 895px;
       .bg {
         width: 100%;
         height: max-content;
@@ -62,8 +62,8 @@ const WrapperBackgrounds = styled.div`
     &.about,
     &.projects,
     &.contact {
-      min-height: 930px;
-      max-height: 100vh;
+      min-height: 835px;
+      max-height: 835px;
       .bg {
         width: 100%;
         height: max-content;
