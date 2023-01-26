@@ -43,19 +43,36 @@ function BackToTop() {
 }
 
 const WrapperBackToTop = styled.div`
-  visibility: visible;
   position: fixed;
-  bottom: 22px;
+  bottom: 28px;
   right: 22px;
+
+  button {
+    border: 1px solid #000000;
+    box-shadow: 4px 4px 10px rgba(76, 77, 220, 0.2);
+
+    &.mantine-Button-root {
+      width: 100%;
+      padding: 0 17px;
+      min-height: 44px;
+      border-radius: 10px;
+    }
+    &.mantine-Button-label {
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
 
   .icon__ {
     transform: rotate(180deg);
-    margin-right: 16px;
-    margin-bottom: 5px;
+    margin-right: 12px;
+    margin-bottom: 3px;
   }
 
-  @media (min-width: 1200px) {
-    visibility: visible;
+  @media (min-width: 1100px) {
+    position: fixed;
+    bottom: 34px;
+    right: 34px;
   }
 `
 

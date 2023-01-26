@@ -38,16 +38,21 @@ function Home() {
   }, [inView, setThemeColor])
 
   return (
-    <Wrapper>
-      <HomeHelmet />
-      <div ref={ref}>
-        <HeroBackgrounds route="home" imgUrl="/assets/image/heroBg.jpg" />
-        <HeroSection />
+    <>
+      <Wrapper>
+        <HomeHelmet />
+        <div ref={ref}>
+          <HeroBackgrounds route="home" imgUrl="/assets/image/heroBg.jpg" />
+          <HeroSection />
+        </div>
+        <ProjectsSection />
+        <ToolsSection />
+        <BackToTop />
+      </Wrapper>
+      <div style={{position: 'relative'}}>
+        <BackToTop />
       </div>
-      <ProjectsSection />
-      <ToolsSection />
-      <BackToTop />
-    </Wrapper>
+    </>
   )
 }
 

@@ -52,16 +52,20 @@ function About() {
   }, [])
 
   return (
-    <Wrapper id="about-section">
-      <AboutHelmet />
-      <div ref={ref}>
-        <HeroBackgrounds route="about" imgUrl="/assets/image/heroBg.jpg" />
-        <HeroSection />
+    <>
+      <Wrapper id="about-section">
+        <AboutHelmet />
+        <div ref={ref}>
+          <HeroBackgrounds route="about" imgUrl="/assets/image/heroBg.jpg" />
+          <HeroSection />
+        </div>
+        <IntroSection />
+        <WorkSection />
+      </Wrapper>
+      <div style={{position: 'relative'}}>
+        <BackToTop />
       </div>
-      <IntroSection />
-      <WorkSection />
-      <BackToTop />
-    </Wrapper>
+    </>
   )
 }
 

@@ -52,7 +52,7 @@ const WrapperFooter = styled.footer`
   margin-top: 153px;
 
   > div {
-    padding: 72px 0px;
+    padding: 72px 0px 92px 0px;
   }
 
   .bottom {
