@@ -37,20 +37,15 @@ function Contact() {
   }, [inView, setThemeColor])
 
   return (
-    <>
-      <Wrapper>
-        <ContactHelmet />
-        <div ref={ref}>
-          <HeroBackgrounds route="contact" imgUrl="/assets/image/heroBg.jpg" />
-          <HeroSection />
-        </div>
-        <ContactSection />
-        <BackToTop />
-      </Wrapper>
-      <div style={{position: 'relative'}}>
-        <BackToTop />
+    <Wrapper>
+      <ContactHelmet />
+      <div ref={ref}>
+        <HeroBackgrounds route="contact" imgUrl="/assets/image/heroBg.jpg" />
+        <HeroSection />
       </div>
-    </>
+      <ContactSection />
+      <BackToTop />
+    </Wrapper>
   )
 }
 

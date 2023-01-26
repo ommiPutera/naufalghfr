@@ -46,20 +46,15 @@ function Projects() {
   }, [])
 
   return (
-    <>
-      <Wrapper>
-        <ProjectsHelmet />
-        <div ref={ref}>
-          <HeroBackgrounds route="projects" imgUrl="/assets/image/heroBg.jpg" />
-          <HeroSection />
-        </div>
-        <ProjectsSection />
-        <BackToTop />
-      </Wrapper>
-      <div style={{position: 'relative'}}>
-        <BackToTop />
+    <Wrapper>
+      <ProjectsHelmet />
+      <div ref={ref}>
+        <HeroBackgrounds route="projects" imgUrl="/assets/image/heroBg.jpg" />
+        <HeroSection />
       </div>
-    </>
+      <ProjectsSection />
+      <BackToTop />
+    </Wrapper>
   )
 }
 

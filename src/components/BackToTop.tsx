@@ -13,13 +13,12 @@ function BackToTop() {
 
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll, {passive: true})
-
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
-  if (scrollPosition > 240) {
+  if (scrollPosition > 290) {
     return (
       <WrapperBackToTop className="basic-animate">
         <Button
@@ -70,9 +69,21 @@ const WrapperBackToTop = styled.div`
   }
 
   @media (min-width: 1100px) {
-    position: fixed;
-    bottom: 34px;
-    right: 34px;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: sticky;
+    padding-top: 4%;
+
+    button {
+      &.mantine-Button-root {
+        width: 180px;
+        padding: 0 17px;
+        min-height: 44px;
+        border-radius: 10px;
+      }
+    }
   }
 `
 

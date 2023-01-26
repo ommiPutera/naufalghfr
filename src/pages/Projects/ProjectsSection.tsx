@@ -174,6 +174,9 @@ const WrapperProjectsCards = styled.div`
   @media (min-width: 1200px) {
     width: 90%;
 
+    .project__card:first-child {
+      border-top: 1px solid rgba(18, 18, 18, 0.15);
+    }
     .project__card:last-child {
       .left__ {
         border-bottom: none;
@@ -187,7 +190,7 @@ const WrapperProjectsCards = styled.div`
 const ProjectCard = styled.div`
   display: flex;
   flex-direction: column-reverse;
-  border-top: 1px solid rgba(18, 18, 18, 0.15);
+  border-top: 0.5px solid rgba(18, 18, 18, 0.15);
 
   .title__ {
     width: 100%;
@@ -254,7 +257,7 @@ const ProjectCard = styled.div`
     }
     .preview__ {
       border-left: 1px solid rgba(18, 18, 18, 0.15);
-      border-bottom: 1px solid rgba(18, 18, 18, 0.15);
+      border-bottom: 0.5px solid rgba(18, 18, 18, 0.15);
       padding: 59px;
       width: 50%;
       margin: auto;
