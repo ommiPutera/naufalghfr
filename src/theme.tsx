@@ -84,8 +84,8 @@ const mantineTheme = {
     Container: {
       defaultProps: {
         sizes: {
-          xs: 620,
-          sm: 920,
+          xs: 560,
+          sm: 650,
           md: 1160,
           lg: 1320,
           xl: 1590,

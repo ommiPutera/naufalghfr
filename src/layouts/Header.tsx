@@ -12,7 +12,7 @@ function Header() {
   const {pathname} = useLocation()
   return (
     <WrapperHeader>
-      <Container size={HEADER_SIZE}>
+      <Container size={HEADER_SIZE} className="p-0">
         <LeftContent className="align-center">
           <Logo>
             <Link to="/" className={pathname === '/' ? 'match' : ''}>
@@ -51,9 +51,10 @@ function NavButton() {
 }
 
 const WrapperHeader = styled.header`
-  padding: 38px 0 22px 0;
+  padding: 38px 48px 22px 48px;
 
   > div {
+    padding: 0 24px;
     display: flex;
   }
 

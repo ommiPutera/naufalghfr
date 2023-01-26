@@ -1,21 +1,15 @@
 import React from 'react'
 import {Helmet} from 'react-helmet'
 import {useInView} from 'react-intersection-observer'
+import Loadable from 'react-loadable'
 import styled from 'styled-components'
 import BackToTop from '../../components/BackToTop'
+import HeroBackgrounds from '../../layouts/Backgrounds'
 import {useThemeColorStore} from '../../store/themeStore'
-import Loadable from 'react-loadable'
+import HeroSection from './HeroSection'
 
-const HeroSection = Loadable({
-  loader: () => import('./HeroSection'),
-  loading: () => <></>,
-})
 const ProjectsSection = Loadable({
   loader: () => import('./ProjectsSection'),
-  loading: () => <></>,
-})
-const HeroBackgrounds = Loadable({
-  loader: () => import('../../layouts/Backgrounds'),
   loading: () => <></>,
 })
 
@@ -48,9 +42,7 @@ function Projects() {
   }, [inView, setThemeColor])
 
   React.useLayoutEffect(() => {
-    HeroSection.preload()
     ProjectsSection.preload()
-    HeroBackgrounds.preload()
   }, [])
 
   return (

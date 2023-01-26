@@ -14,7 +14,7 @@ const certifiedLogoAssetsUrl = [
 
 function HeroSection() {
   return (
-    <WrapperHero className="mobile__mt-42">
+    <WrapperHero className="mobile__mt-62">
       <Title order={1} className="mobile__font-70 basic-animate">
         DIGITAL PRODUCT
       </Title>
@@ -28,7 +28,7 @@ function HeroSection() {
       <Container size="xs" className="mobile__p-0">
         <Text
           size="lg"
-          className="mt-26 mobile__mt-52 font-20 mobile__font-14 font-400 basic-animate-1"
+          className="mt-26 mobile__mt-52 font-18 mobile__font-14 font-400 basic-animate-1"
         >
           Hi 👋 My name is Muhammad Naufal Ghifari, a Product Designer with
           experience working in B2B and B2C Company as a UIX Designer. I help
@@ -38,11 +38,11 @@ function HeroSection() {
       <Certified className="mt-129 mobile__mt-52 basic-animate-2">
         <Text
           size="lg"
-          className="text mobile__mt-22 mobile__font-14 font-20 font-400"
+          className="text mobile__mt-22 mobile__font-14 font-18 font-400"
         >
           Design Certified By
         </Text>
-        <Container size="xs" className="items__ mobile__p-0">
+        <Container size="sm" className="items__ mobile__p-0">
           {certifiedLogoAssetsUrl.map(logoUrl => (
             <div key={logoUrl} className="item__">
               <img src={logoUrl} alt="" className="logo" />
@@ -85,10 +85,12 @@ const WrapperHero = styled.div`
     justify-content: center;
     text-align: center;
     height: 100%;
-    margin: 62px 0 62px 0;
+    margin: 102px 0 62px 0;
 
     h1 {
-      line-height: 120px;
+      line-height: 115px;
+      font-size: 98px;
+      letter-spacing: -1px;
     }
   }
 `

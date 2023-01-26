@@ -1,13 +1,22 @@
 import React from 'react'
 import {Helmet} from 'react-helmet'
 import styled from 'styled-components'
+import Loadable from 'react-loadable'
 import BackToTop from '../../components/BackToTop'
 import HeroBackgrounds from '../../layouts/Backgrounds'
 import {useThemeColorStore} from '../../store/themeStore'
 import {useInView} from 'react-intersection-observer'
 import HeroSection from './HeroSection'
-import IntroSection from './IntroSection'
-import WorkSection from './WorkSection'
+
+const IntroSection = Loadable({
+  loader: () => import('./IntroSection'),
+  loading: () => <></>,
+})
+
+const WorkSection = Loadable({
+  loader: () => import('./WorkSection'),
+  loading: () => <></>,
+})
 
 function AboutHelmet() {
   const {themeColor} = useThemeColorStore(state => state)
@@ -36,6 +45,11 @@ function About() {
       setThemeColor('#fff')
     }
   }, [inView, setThemeColor])
+
+  React.useLayoutEffect(() => {
+    IntroSection.preload()
+    WorkSection.preload()
+  }, [])
 
   return (
     <Wrapper id="about-section">

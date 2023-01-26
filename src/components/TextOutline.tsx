@@ -35,7 +35,7 @@ const WrapperTextOutline = styled.div`
     align-items: center;
     justify-content: center;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1.5px;
     margin-top: 0;
 
     &.color__white {

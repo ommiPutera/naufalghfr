@@ -1,10 +1,10 @@
 import {MantineProvider} from '@mantine/core'
+import {Route, Routes} from 'react-router-dom'
 import {ThemeProvider} from 'styled-components'
-import {GlobalStyle, mantineTheme, styledTheme} from './theme'
-import {Routes, Route} from 'react-router-dom'
+import {DefaultLayout} from './layouts'
 import {APP_ROUTES} from './routes'
 import NoMatchPage from './routes/NoMatch'
-import {DefaultLayout} from './layouts'
+import {GlobalStyle, mantineTheme, styledTheme} from './theme'
 
 function App() {
   const theme = {
@@ -36,14 +36,6 @@ function AppRoutes() {
         ))}
       </Route>
     </Routes>
-  )
-}
-
-export function About() {
-  return (
-    <div>
-      <h2>About</h2>
-    </div>
   )
 }
 
