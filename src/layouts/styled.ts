@@ -91,7 +91,6 @@ export const WrapperDropdownNav = styled.nav`
 
   ul {
     width: 100%;
-    background: red;
     overflow: scroll;
     animation: ${growDown} 400ms linear;
     transform-origin: top center;
@@ -113,6 +112,7 @@ export const WrapperDropdownNav = styled.nav`
     gap: 10px;
 
     div {
+      border: 1px solid ${({theme: {colors}}) => colors.dark[9]};
       border-radius: 50px;
       position: absolute;
       content: '';

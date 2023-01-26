@@ -16,7 +16,7 @@ function Header() {
         <LeftContent className="align-center">
           <Logo>
             <Link to="/" className={pathname === '/' ? 'match' : ''}>
-              <div className="mobile__font-28">NAUFAL .</div>
+              <span className="mobile__font-28">NAUFAL .</span>
             </Link>
           </Logo>
         </LeftContent>
@@ -40,12 +40,13 @@ function Header() {
 function NavButton() {
   const {isOpen, setIsOpen} = useNavigation()
   return (
-    <ActionIcon
-      className="nav__btn btn"
-      size={BUTTON_MODE_SIZE}
-      radius="xl"
-      onClick={() => setIsOpen(!isOpen)}
-    ></ActionIcon>
+    <div className="nav__btn btn">
+      <ActionIcon
+        size={BUTTON_MODE_SIZE}
+        radius="xl"
+        onClick={() => setIsOpen(!isOpen)}
+      ></ActionIcon>
+    </div>
   )
 }
 
@@ -78,6 +79,10 @@ const WrapperHeader = styled.header`
     }
   }
   .nav__btn {
+    width: 44px;
+    height: 44px;
+    background: #d9d9d9;
+    border-radius: 50%;
     .menu__icon {
     }
   }
@@ -98,7 +103,7 @@ const WrapperHeader = styled.header`
   }
 `
 const Logo = styled.nav`
-  margin: 0 0 0 12px;
+  margin: 6px 0 0 12px;
   padding: 0;
   display: flex;
   align-items: center;
