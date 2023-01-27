@@ -43,7 +43,7 @@ const colors = {
     '#ff1919',
     '#ff0000',
   ],
-  light: ['#ffffff', '#9E9E9E'],
+  light: ['#ffffff', '#F5F5F5', '#9E9E9E'],
   dark: [
     '#fafafa',
     '#f4f4f5',

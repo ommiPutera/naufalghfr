@@ -99,7 +99,7 @@ const Certified = styled.div`
   display: block;
 
   .text {
-    color: ${({theme: {colors}}) => colors.light[1]};
+    color: ${({theme: {colors}}) => colors.light[2]};
     margin-bottom: 24px;
   }
   .items__ {

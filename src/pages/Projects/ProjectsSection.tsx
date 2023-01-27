@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import {ArrowTopRightIcon} from '../../utils/icons'
 import {CardItemTypes} from '../Home/types'
-import {propsContentProjects} from './props/collection'
+import {propsContentProjects} from './props'
 
 export type ProjectCardItemTypes = {
   assetSrc: string
@@ -74,7 +74,11 @@ function ProjectCardItem({
       <div className={clsx(layout === '1' ? 'left__' : 'right__', 'title__')}>
         <div>
           <div>
-            <Link to={to} className="text__">
+            <Link
+              to={to}
+              className="text__"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               <Title className="font-32 font-600 mobile__font-28">
                 {title}
               </Title>
@@ -100,7 +104,7 @@ function ProjectCardItem({
         </div>
       </div>
       <div className={clsx(layout === '1' ? 'right__' : 'left__', 'preview__')}>
-        <Link to={to}>
+        <Link to={to} onClick={() => window.scrollTo(0, 0)}>
           <img src={assetSrc} alt="" className={animate} />
         </Link>
       </div>

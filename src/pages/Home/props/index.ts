@@ -4,7 +4,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/kenari-apps.jpg',
     title: 'Kenari Apps',
-    to: '/project',
+    to: '/project/kenari-apps',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'Mobile Apps',
     animate: '',

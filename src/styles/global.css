@@ -265,6 +265,10 @@ button:focus {
   width: 60%;
 }
 
+.rotate90 {
+  transform: rotate(90deg);
+}
+
 .basic-animate {
   animation: my-awesome-beboop 0.7s, pause-between-iterations 0.7s linear;
 }

@@ -91,7 +91,11 @@ function ProjectCardItem({
       <div className={clsx(layout === '1' ? 'left__' : 'right__', 'title__')}>
         <div>
           <div>
-            <Link to={to} className="text__">
+            <Link
+              to={to}
+              className="text__"
+              onClick={() => window.scrollTo(0, 0)}
+            >
               <Title className="font-32 font-600 mobile__font-28">
                 {title}
               </Title>
@@ -117,7 +121,7 @@ function ProjectCardItem({
         </div>
       </div>
       <div className={clsx(layout === '1' ? 'right__' : 'left__', 'preview__')}>
-        <Link to={to}>
+        <Link to={to} onClick={() => window.scrollTo(0, 0)}>
           <img src={assetSrc} alt="" className={animate} />
         </Link>
       </div>
@@ -139,6 +143,7 @@ const Content = styled.div`
 
 const WrapperAllProjects = styled.div`
   padding-top: 26px;
+  padding-bottom: 48px;
   .btn__projects {
     .mantine-Button-root {
       width: 100%;
@@ -152,20 +157,20 @@ const WrapperAllProjects = styled.div`
 
   @media (min-width: 1200px) {
     border-top: 1px solid rgba(18, 18, 18, 0.15);
-    width: 25%;
-    padding-top: 100px;
+    width: 24%;
+    padding-top: 110px;
 
     .btn__projects {
       position: sticky;
       position: -webkit-sticky;
-      top: 62px;
-      margin-right: 65px;
+      top: 42px;
+      margin-right: 25px;
       .mantine-Button-root {
         width: 100%;
-        min-height: 64px;
+        min-height: 58px;
       }
       .mantine-Button-label {
-        padding: 0 35px;
+        padding: 0 20px;
         font-weight: 400;
         font-size: 20px;
         gap: 16px;
