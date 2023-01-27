@@ -62,12 +62,12 @@ const Wrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 289px;
-        max-width: 289px;
-        max-height: 289px;
+        max-width: 282px;
+        max-height: 282px;
+        min-width: 252px;
+        min-height: 252px;
         width: max-content;
         height: max-content;
-        min-height: 289px;
         border-radius: 100%;
         background: ${({theme: {colors}}) => colors.primary[0]};
 
@@ -114,7 +114,7 @@ const Wrapper = styled.div`
   .order__2 {
     width: 100%;
     height: 100%;
-    margin-top: 12px;
+    margin-top: 48px;
 
     .email__ {
       display: flex;

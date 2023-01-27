@@ -13,6 +13,7 @@ export const growDown = keyframes`
 // --- Layouts ---
 export const WrapperLayout = styled.div`
   .children__ {
+    height: fit-content;
     min-height: 100vh;
     padding: 0 24px;
   }

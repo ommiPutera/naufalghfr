@@ -49,7 +49,7 @@ function SocialItem({logoUrl, to}: {logoUrl: string; to: string}) {
 const WrapperFooter = styled.footer`
   background: ${({theme: {colors}}) => colors.dark[9]};
   color: ${({theme: {colors}}) => colors.light[0]};
-  margin-top: 153px;
+  margin-top: 48px;
 
   > div {
     padding: 72px 0px 92px 0px;

@@ -42,16 +42,20 @@ function BackToTop() {
 }
 
 const WrapperBackToTop = styled.div`
-  position: fixed;
-  bottom: 28px;
-  right: 22px;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 38px;
+  right: 0;
+  display: flex;
+  padding-top: 14%;
+  justify-content: end;
 
   button {
     border: 1px solid #000000;
     box-shadow: 4px 4px 10px rgba(76, 77, 220, 0.2);
 
     &.mantine-Button-root {
-      width: 100%;
+      width: 180px;
       padding: 0 17px;
       min-height: 44px;
       border-radius: 10px;
@@ -74,6 +78,7 @@ const WrapperBackToTop = styled.div`
     display: flex;
     justify-content: end;
     position: sticky;
+    position: -webkit-sticky;
     padding-top: 4%;
 
     button {
