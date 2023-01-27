@@ -13,7 +13,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/ruang-alternative.jpg',
     title: 'Ruang Alternative',
-    to: '/project',
+    to: '/project/ruang-alternative',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'Interface & Website',
     animate: '',
@@ -22,7 +22,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/mental-health-case-study.jpg',
     title: 'Mental health Case Study',
-    to: '/project',
+    to: '/project/mental-health-case-study',
     desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
     types: 'case study & interface',
     animate: '',

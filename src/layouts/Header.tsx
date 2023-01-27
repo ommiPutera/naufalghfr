@@ -5,10 +5,12 @@ import {RouteArray} from '.'
 import {Button} from '../components/Button'
 import {BUTTON_MODE_SIZE, HEADER_SIZE} from '../defaultVariable'
 import {useNavigation} from '../store/rootStore'
+import {useThemeColorStore} from '../store/themeStore'
 import {PenIcon} from '../utils/icons'
 import {LeftContent, CenterContent, RightContent, growDown} from './styled'
 
 function Header() {
+  const {logoColor} = useThemeColorStore(state => state)
   const {pathname} = useLocation()
   return (
     <WrapperHeader>
@@ -16,7 +18,9 @@ function Header() {
         <LeftContent className="align-center">
           <Logo>
             <Link to="/" className={pathname === '/' ? 'match' : ''}>
-              <div className="mobile__font-28">NAUFAL .</div>
+              <div className="mobile__font-28" style={{color: logoColor}}>
+                NAUFAL .
+              </div>
             </Link>
           </Logo>
         </LeftContent>
@@ -119,7 +123,6 @@ const Logo = styled.nav`
     font-display: fallback;
     font-size: 31.72px;
     letter-spacing: 3.9646px;
-    color: #ffff;
 
     @media (min-width: 1200px) {
       font-size: 31.72px;

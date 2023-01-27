@@ -1,9 +1,10 @@
 import {Button} from '@mantine/core'
 import React from 'react'
-import {Link, useLocation} from 'react-router-dom'
+import {Link, useLocation, useNavigate} from 'react-router-dom'
 import styled from 'styled-components'
 
 function NoMatchPage() {
+  const navigate = useNavigate()
   const {pathname} = useLocation()
   const url = window.location.href
     .replace(/http:|https:|/gi, '')
@@ -25,6 +26,17 @@ function NoMatchPage() {
           Go to the home page
         </Button>
       </Link>
+      <br />
+      <br />
+      <Button
+        onClick={() => navigate(-1)}
+        color="danger.9"
+        variant="outline"
+        radius="xl"
+        size="md"
+      >
+        Back
+      </Button>
     </WrapperPage>
   )
 }

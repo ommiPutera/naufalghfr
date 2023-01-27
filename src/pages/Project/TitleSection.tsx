@@ -1,5 +1,4 @@
 import {Text, Title} from '@mantine/core'
-import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
@@ -14,13 +13,15 @@ function TitleSection({title, role, link}: TitleType) {
         <Role />
       </div>
       <div className="middle__">
-        <Title order={1} className="font-uppercase">
+        <Title order={1} className="font-uppercase mobile__font-42">
           {title}
         </Title>
       </div>
-      <div className="bottom__">
-        <LinkButton to={link.to} desc={link.desc} />
-      </div>
+      {link.to && link.desc ? (
+        <div className="bottom__">
+          <LinkButton to={link.to} desc={link.desc} />
+        </div>
+      ) : null}
     </Wrapper>
   )
 }
@@ -28,7 +29,7 @@ function TitleSection({title, role, link}: TitleType) {
 function BackButton() {
   return (
     <WrapperBackButton>
-      <Link to="/projects" onClick={() => window.scrollTo(0, 0)}>
+      <Link to="/projects">
         <Button variant="subtle">
           <div className="icon__">
             <ArrowLeft />
@@ -68,7 +69,12 @@ function LinkButton({to, desc}: {to: string; desc: string}) {
           <div className="icon__">
             <LinkIcon />
           </div>
-          <strong>{desc}</strong>
+          <div className="text__">
+            <strong>{desc}</strong>
+            <strong>
+              <Text className="link__to">{to}</Text>
+            </strong>
+          </div>
         </Button>
       </a>
     </WrapperLinkButton>
@@ -77,11 +83,18 @@ function LinkButton({to, desc}: {to: string; desc: string}) {
 
 const Wrapper = styled.div`
   border-top: 1px solid rgba(18, 18, 18, 0.15);
+  border-bottom: 1px solid rgba(18, 18, 18, 0.15);
+  padding-bottom: 24px;
+
   .top__ {
-    margin-top: 28px;
+    margin-top: 22px;
     gap: 10px;
     display: flex;
     flex-direction: column;
+  }
+
+  .middle__ {
+    margin: 50px 0 0 0;
   }
 
   @media (min-width: 1100px) {
@@ -153,31 +166,46 @@ const WrapperBackButton = styled.div`
 
 const WrapperLinkButton = styled.div`
   button {
+    margin-top: 48px;
     font-size: 12px;
     color: ${({theme: {colors}}) => colors.dark[9]};
 
     &.mantine-Button-root {
       padding: 0px;
     }
-  }
-  .icon__ {
-    color: ${({theme: {colors}}) => colors.dark[9]};
-    margin-right: 10px;
+    .icon__ {
+      color: ${({theme: {colors}}) => colors.dark[9]};
+      margin-right: 10px;
+    }
+    .text__ {
+      margin-top: 13px;
+    }
+    .link__to {
+      margin-top: 5px;
+      text-decoration: underline;
+      display: block;
+    }
   }
 
   @media (min-width: 1100px) {
     button {
       font-size: 12px;
       color: ${({theme: {colors}}) => colors.dark[9]};
-      text-decoration: underline;
 
       &.mantine-Button-root {
         padding: 0px;
       }
-    }
-    .icon__ {
-      color: ${({theme: {colors}}) => colors.dark[9]};
-      margin-right: 10px;
+      .icon__ {
+        color: ${({theme: {colors}}) => colors.dark[9]};
+        margin-right: 10px;
+      }
+      .text__ {
+        margin-top: 0px;
+        text-decoration: underline;
+      }
+      .link__to {
+        display: none;
+      }
     }
   }
 `

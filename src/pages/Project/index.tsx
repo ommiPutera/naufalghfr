@@ -23,7 +23,13 @@ function ProjectHelmet() {
 
 function Project() {
   let {projectId} = useParams()
+  const {logoColor, setLogoColor} = useThemeColorStore(state => state)
   const contentProps = ProjectContent.find(project => project.id === projectId)
+
+  React.useEffect(() => {
+    setLogoColor('#1D1D1D')
+    return () => setLogoColor('#fff')
+  }, [setLogoColor, logoColor])
 
   if (!contentProps?.id) return <></>
   return (
@@ -37,6 +43,7 @@ function Project() {
 
 const Wrapper = styled.div`
   display: block;
+  margin-top: 43px;
 
   @media (min-width: 1100px) {
     margin-top: 94px;
