@@ -64,19 +64,19 @@ function Role() {
 function LinkButton({to, desc}: {to: string; desc: string}) {
   return (
     <WrapperLinkButton>
-      <a href={to} target="_blank" rel="noreferrer">
-        <Button variant="subtle">
-          <div className="icon__">
-            <LinkIcon />
-          </div>
-          <div className="text__">
+      <Button variant="subtle">
+        <div className="icon__">
+          <LinkIcon />
+        </div>
+        <div className="text__">
+          <a href={to} target="_blank" rel="noreferrer">
             <strong>{desc}</strong>
-            <strong>
-              <Text className="link__to">{to}</Text>
-            </strong>
-          </div>
-        </Button>
-      </a>
+          </a>
+          <strong>
+            <Text className="link__to">{to}</Text>
+          </strong>
+        </div>
+      </Button>
     </WrapperLinkButton>
   )
 }

@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import BackToTop from '../../components/BackToTop'
 import {useThemeColorStore} from '../../store/themeStore'
 import {ProjectContent} from './props'
+import KenariApps from './props/kenari-apps.mdx'
 import TitleSection from './TitleSection'
 
 function ProjectHelmet() {
@@ -36,6 +37,7 @@ function Project() {
     <Wrapper>
       <ProjectHelmet />
       <TitleSection {...contentProps.metaTitle} />
+      <KenariApps />
       <BackToTop />
     </Wrapper>
   )
