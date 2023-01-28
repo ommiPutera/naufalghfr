@@ -1,4 +1,5 @@
 import {MantineProvider} from '@mantine/core'
+import {Helmet} from 'react-helmet'
 import {Route, Routes} from 'react-router-dom'
 import {ThemeProvider} from 'styled-components'
 import {DefaultLayout} from './layouts'
@@ -15,9 +16,18 @@ function App() {
     <MantineProvider withGlobalStyles withNormalizeCSS theme={mantineTheme}>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <AppHelmet />
         <AppRoutes />
       </ThemeProvider>
     </MantineProvider>
+  )
+}
+
+function AppHelmet() {
+  return (
+    <Helmet>
+      <meta name="theme-color" content="#1D1D1D" />
+    </Helmet>
   )
 }
 

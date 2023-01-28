@@ -11,8 +11,8 @@ function BackToTop() {
     setScrollPosition(position)
   }
 
-  React.useEffect(() => {
-    window.addEventListener('scroll', handleScroll, {passive: true})
+  React.useLayoutEffect(() => {
+    window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
@@ -37,7 +37,7 @@ function BackToTop() {
       </WrapperBackToTop>
     )
   } else {
-    return <></>
+    return <div style={{height: '120px'}}></div>
   }
 }
 
@@ -74,6 +74,7 @@ const WrapperBackToTop = styled.div`
 
   @media (min-width: 1100px) {
     background: transparent;
+    height: 120px;
     width: 100%;
     display: flex;
     justify-content: end;

@@ -1,6 +1,7 @@
 {
   "name": "naufalghfr",
-  "version": "0.2.0",
+  "version": "0.3.0",
+  "author": "Ommi Putera",
   "private": true,
   "dependencies": {
     "@craco/craco": "^7.0.0",

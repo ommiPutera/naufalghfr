@@ -89,7 +89,7 @@ function ProjectCardItem({
   return (
     <ProjectCard className="project__card mobile__mt-26">
       <div className={clsx(layout === '1' ? 'left__' : 'right__', 'title__')}>
-        <div>
+        <div className={animate}>
           <div>
             <Link
               to={to}
@@ -111,7 +111,7 @@ function ProjectCardItem({
             {desc}
           </Text>
         </div>
-        <div>
+        <div className="basic-animate-3">
           <Text
             size="lg"
             className="types__ mt-26 mobile__mt-43 font-14 mobile__font-14 font-500"
@@ -209,7 +209,11 @@ const WrapperProjectsCards = styled.div`
 const ProjectCard = styled.div`
   display: flex;
   flex-direction: column-reverse;
-  border-top: 1px solid rgba(18, 18, 18, 0.15);
+  :first-child {
+    border-top: 1px solid rgba(18, 18, 18, 0.15);
+  }
+
+  border-top: 0.5px solid rgba(18, 18, 18, 0.15);
 
   .title__ {
     width: 100%;
@@ -266,7 +270,7 @@ const ProjectCard = styled.div`
       flex-direction: column;
       justify-content: space-between;
       border-left: 1px solid rgba(18, 18, 18, 0.15);
-      border-bottom: 1px solid rgba(18, 18, 18, 0.15);
+      border-bottom: 0.5px solid rgba(18, 18, 18, 0.15);
 
       .text__ {
         display: flex;
@@ -277,7 +281,7 @@ const ProjectCard = styled.div`
     }
     .preview__ {
       border-left: 1px solid rgba(18, 18, 18, 0.15);
-      border-bottom: 1px solid rgba(18, 18, 18, 0.15);
+      border-bottom: 0.5px solid rgba(18, 18, 18, 0.15);
       padding: 59px;
       width: 50%;
       margin: auto;
