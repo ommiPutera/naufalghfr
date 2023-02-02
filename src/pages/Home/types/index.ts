@@ -2,7 +2,7 @@ export type CardItemTypes = {
   assetSrc: string
   title: string
   to: string
-  desc: string
+  desc: string | JSX.Element
   types?: string
   animate?:
     | ''

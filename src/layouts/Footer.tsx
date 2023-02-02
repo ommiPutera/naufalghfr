@@ -29,7 +29,7 @@ function Footer() {
         </div>
         <Divider size="xs" />
         <div className="bottom">
-          <p>© Copyright 2023, All Rights Reserved</p>
+          <p>© 2022 Naufalghfr Portfolio</p>
         </div>
       </Container>
     </WrapperFooter>

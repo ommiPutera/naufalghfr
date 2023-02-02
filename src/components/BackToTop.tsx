@@ -18,9 +18,9 @@ function BackToTop() {
     }
   }, [])
 
-  if (scrollPosition > 290) {
+  if (scrollPosition > 370) {
     return (
-      <WrapperBackToTop className="basic-animate">
+      <WrapperBackToTop className="basic-animate-2">
         <Button
           variant="subtle"
           onClick={() =>
@@ -55,7 +55,7 @@ const WrapperBackToTop = styled.div`
     box-shadow: 4px 4px 10px rgba(76, 77, 220, 0.2);
 
     &.mantine-Button-root {
-      width: 180px;
+      width: 52px;
       padding: 0 17px;
       min-height: 44px;
       border-radius: 10px;

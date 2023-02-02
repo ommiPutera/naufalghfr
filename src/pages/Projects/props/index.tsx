@@ -5,36 +5,53 @@ const propsContentProjects: CardItemTypes[] = [
   ...propsProjectsFromHomePage,
   {
     assetSrc: '/assets/image/previewProjects/icons.jpg',
-    title: 'Title',
+    title: 'Icon Design',
     to: '/project',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
-    types: 'Interface & Website',
+    desc: (
+      <span>
+        Designing an Icon pack for eCommerce <br /> (exploration)
+      </span>
+    ),
+    types: 'Icon Design',
     animate: 'basic-animate',
     layout: '1',
   },
   {
     assetSrc: '/assets/image/previewProjects/ruang-alternative-2.jpg',
-    title: 'Title',
+    title: 'Article Website',
     to: '/project',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
+    desc: (
+      <span>
+        Designing an article, event, video & <br /> podcast website for Digital
+        Agencies
+      </span>
+    ),
     types: 'Interface & Website',
     animate: 'basic-animate-3',
     layout: '2',
   },
   {
     assetSrc: '/assets/image/previewProjects/design-system.jpg',
-    title: 'Title',
+    title: 'Design System',
     to: '/project',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
-    types: 'Interface & Website',
+    desc: (
+      <span>
+        Designing a design system and <br /> documentation for fintech product
+      </span>
+    ),
+    types: 'Design System Documentation',
     animate: 'basic-animate',
     layout: '1',
   },
   {
     assetSrc: '/assets/image/previewProjects/kenari-dashboard.jpg',
-    title: 'Title',
+    title: 'Indofund Dashboard',
     to: '/project',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Orci turpis diam id dignissim in laoreet. Amet amet viverra amet massa lectus adipiscing etiam felis. Ac ipsum tincidunt.',
+    desc: (
+      <span>
+        Re-Design and visual improvement for <br /> admin Dashboard Indofund.id
+      </span>
+    ),
     types: 'Interface & Website',
     animate: 'basic-animate-3',
     layout: '2',

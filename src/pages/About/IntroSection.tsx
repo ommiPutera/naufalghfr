@@ -1,5 +1,4 @@
 import {Text} from '@mantine/core'
-import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {ArrowTopRightIcon} from '../../utils/icons'
 
@@ -7,14 +6,9 @@ function IntroSection() {
   return (
     <Wrapper className="mt-110 mobile__mt-42" id="intro">
       <div className="order__1">
-        <Link to="/" className="wrapper__">
-          <div>
-            <ArrowTopRightIcon />
-          </div>
-          <p>
-            My <br /> Resume
-          </p>
-        </Link>
+        <div className="wrapper__">
+          <img src="/assets/profile.png" alt="" />
+        </div>
       </div>
       <div className="order__2">
         <div className="title__">
@@ -38,60 +32,78 @@ function IntroSection() {
             <b> “Great design is as little design as possible.”</b>
           </span>
         </Text>
+        <div className="link__resume">
+          <a href="/">Link to my Resume</a>
+          <ArrowTopRightIcon />
+        </div>
       </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  padding-bottom: 48px;
+  padding-bottom: 12px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
 
   .order__1 {
+    order: 2;
     margin-top: 48px;
     .wrapper__ {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-width: 250px;
-      max-width: 300px;
-      max-height: 300px;
-      width: max-content;
-      height: max-content;
-      min-height: 250px;
+      width: 288px;
+      height: 288px;
       border-radius: 100%;
-      background: ${({theme: {colors}}) => colors.primary[0]};
-      div {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-end;
-        width: 100px;
-        height: 50px;
-        color: #ffff;
-      }
 
-      p {
-        font-size: 28px;
-        color: #ffff;
-        line-height: 30px;
-        font-weight: 600;
+      img {
+        width: max-content;
+        height: max-content;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
       }
     }
   }
 
   .order__2 {
+    order: 1;
     width: 100%;
     height: 100%;
     margin-top: 48px;
 
     .title__ {
       display: flex;
+      align-items: center;
       h3 {
         font-size: 28px;
         font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        div {
+          z-index: -1;
+          width: 51%;
+          height: 12px;
+          background: ${({theme: {colors}}) => colors.primary[0]};
+          margin-top: -17px;
+        }
+      }
+    }
+    .link__resume {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 12px;
+      color: ${({theme: {colors}}) => colors.primary[0]};
+      a {
+        font-weight: 600;
+        text-decoration: underline 1.5px;
+        text-underline-offset: 4px;
       }
     }
     .describe__ {
@@ -116,11 +128,14 @@ const Wrapper = styled.div`
     gap: 60px;
 
     .order__1 {
+      order: 1;
       margin-top: 0;
     }
     .order__2 {
+      order: 2;
       width: 70%;
       height: 100%;
+      margin-top: 0;
 
       .title__ {
         display: flex;
@@ -141,7 +156,7 @@ const Wrapper = styled.div`
         }
       }
       .describe__ {
-        margin-top: 32px;
+        margin-top: 12px;
         color: #616161;
         b {
           color: #121212;

@@ -16,16 +16,19 @@ function WorkSection() {
           role="UI/UX DESIGNER"
           companyName="PT. Surya Fajar Capital.tbk"
           jobType="Full Time"
-        />
-        <WorkItem
-          role="Front End Developer"
-          companyName="PT. Surya Fajar Capital.tbk"
-          jobType="Full Time"
+          dates={{start: 'Jun, 2022', end: 'Present'}}
         />
         <WorkItem
           role="UI/UX DESIGNER"
-          companyName="PT. Surya Fajar Capital.tbk"
+          companyName="Ruang Alternative (Agency)"
           jobType="Full Time"
+          dates={{start: 'Jan, 2022', end: 'Apr, 2022'}}
+        />
+        <WorkItem
+          role="UI DESIGNER"
+          companyName="PT. Amara Daniswara (Agency)"
+          jobType="Freelance"
+          dates={{start: 'Dec, 2020', end: 'Dec, 2021'}}
         />
       </div>
     </Wrapper>
@@ -36,10 +39,15 @@ function WorkItem({
   role,
   companyName,
   jobType,
+  dates: {start, end},
 }: {
   role: string
   companyName: string
   jobType: string
+  dates: {
+    start: string
+    end: string
+  }
 }) {
   return (
     <WrapperWorkItem>
@@ -48,12 +56,12 @@ function WorkItem({
         <div className="period__">
           <div className="start">
             <p>START</p>
-            <p>Dec 07, 2022</p>
+            <p>{start}</p>
           </div>
           <div className="dash">-</div>
           <div className="end">
             <p>END</p>
-            <p>Dec 07, 2022</p>
+            <p>{end}</p>
           </div>
         </div>
       </div>
@@ -86,7 +94,7 @@ const WrapperWorkItem = styled.div`
     .role__ {
       background: ${({theme: {colors}}) => colors.dark[9]};
       color: #ffff;
-      padding: 6px 20px 4.5px 20px;
+      padding: 5px 12px 4.5px 12px;
       border-radius: 20px;
       text-transform: uppercase;
       font-size: 13px;
@@ -176,6 +184,7 @@ const WrapperWorkItem = styled.div`
 
       .company__ {
         padding-bottom: 0px;
+        padding-right: 6px;
       }
     }
   }
