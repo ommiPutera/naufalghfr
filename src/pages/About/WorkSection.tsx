@@ -8,7 +8,7 @@ function WorkSection() {
     <Wrapper className="mt-110 mobile__mt-42" id="projects">
       <TitleSection
         reversedRow={true}
-        highlightText="BEST PROJECTS SELECTION"
+        highlightText="MY PAST EXPERIENCE"
         title={{defaultText: 'WORK', outlineText: 'EXPERIENCE'}}
       />
       <div className="mt-62 mobile__mt-26">
