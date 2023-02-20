@@ -82,6 +82,8 @@ export const WrapperDropdownNav = styled.nav`
   max-height: 100vh;
   position: absolute;
   z-index: 9999;
+  background: #1d1d1d;
+  color: #fff;
 
   &.open {
     display: block;

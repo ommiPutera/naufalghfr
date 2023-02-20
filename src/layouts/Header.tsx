@@ -1,9 +1,9 @@
-import {ActionIcon, Container} from '@mantine/core'
+import {Container} from '@mantine/core'
 import {Link, useLocation} from 'react-router-dom'
 import styled from 'styled-components'
 import {RouteArray} from '.'
 import {Button} from '../components/Button'
-import {BUTTON_MODE_SIZE, HEADER_SIZE} from '../defaultVariable'
+import {HEADER_SIZE} from '../defaultVariable'
 import {useNavigation} from '../store/rootStore'
 import {useThemeColorStore} from '../store/themeStore'
 import {PenIcon} from '../utils/icons'
@@ -48,17 +48,84 @@ function Header() {
 }
 
 function NavButton() {
-  const {isOpen, setIsOpen} = useNavigation()
   return (
     <div className="nav__btn btn">
-      <ActionIcon
-        size={BUTTON_MODE_SIZE}
-        radius="xl"
-        onClick={() => setIsOpen(!isOpen)}
-      ></ActionIcon>
+      <HamburgerIcon />
     </div>
   )
 }
+
+function HamburgerIcon() {
+  const {isOpen, setIsOpen} = useNavigation()
+  return (
+    <NavIcon>
+      <input
+        onClick={() => setIsOpen(!isOpen)}
+        type="checkbox"
+        id="menu_checkbox"
+      />
+      <label htmlFor="menu_checkbox">
+        <div></div>
+        <div></div>
+      </label>
+    </NavIcon>
+  )
+}
+
+const NavIcon = styled.div`
+  background: transparent;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  margin-top: -6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  #menu_checkbox {
+    display: none;
+  }
+
+  label {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 13px;
+    margin-top: 3px;
+    cursor: pointer;
+  }
+
+  label div {
+    position: relative;
+    top: -2px;
+    height: 1.5px;
+    background-color: #fff;
+    transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
+      0.3s ease right;
+  }
+
+  label div:first-child {
+    transform-origin: 2px;
+  }
+
+  label div:last-child {
+    transform-origin: -2px;
+  }
+  #menu_checkbox:checked + label div:first-child {
+    width: 30px;
+    top: -4px;
+    transform: rotateZ(42deg);
+  }
+
+  #menu_checkbox:checked + label div:last-child {
+    width: 30px;
+    top: 4px;
+    transform: rotateZ(-42deg);
+  }
+`
 
 const WrapperHeader = styled.header`
   padding: 38px 0 22px 0;
@@ -92,7 +159,6 @@ const WrapperHeader = styled.header`
   .nav__btn {
     width: 44px;
     height: 44px;
-    background: #d9d9d9;
     border-radius: 50%;
     .menu__icon {
     }
