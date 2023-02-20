@@ -1,6 +1,6 @@
 import {Text, Title} from '@mantine/core'
 import clsx from 'clsx'
-import {Link} from 'react-router-dom'
+import React from 'react'
 import styled from 'styled-components'
 import {Button} from '../../components/Button'
 import {ArrowTopRightIcon} from '../../utils/icons'
@@ -29,14 +29,29 @@ function ProjectsSection() {
 }
 
 function RandomSelectionButton() {
+  const [index, setIndex] = React.useState(0)
+  const href = propsContentProjects[index]?.to
+
+  const randomIntFromInterval = (min: number, max: number) => {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+  const generateIndex = React.useCallback(() => {
+    let newIndex = randomIntFromInterval(0, propsContentProjects.length)
+    setIndex(newIndex)
+  }, [])
+
+  React.useEffect(() => {
+    generateIndex()
+  }, [generateIndex])
+
   return (
     <WrapperRandomSelection>
-      <Link to="/projects">
+      <a href={href} target="_blank" rel="noreferrer" onClick={generateIndex}>
         <Button size="lg" variant="default" className="btn__random">
           RANDOM SELECTION
           <ArrowTopRightIcon />
         </Button>
-      </Link>
+      </a>
     </WrapperRandomSelection>
   )
 }
@@ -74,18 +89,14 @@ function ProjectCardItem({
       <div className={clsx(layout === '1' ? 'left__' : 'right__', 'title__')}>
         <div className={animate}>
           <div>
-            <Link
-              to={to}
-              className="text__"
-              onClick={() => window.scrollTo(0, 0)}
-            >
+            <a href={to} className="text__" target="_blank" rel="noreferrer">
               <Title className="font-32 font-600 mobile__font-28">
                 {title}
               </Title>
               <div className="icon__">
                 <ArrowTopRightIcon />
               </div>
-            </Link>
+            </a>
           </div>
           <Text
             size="lg"
@@ -104,9 +115,9 @@ function ProjectCardItem({
         </div>
       </div>
       <div className={clsx(layout === '1' ? 'right__' : 'left__', 'preview__')}>
-        <Link to={to} onClick={() => window.scrollTo(0, 0)}>
+        <a href={to} target="_blank" rel="noreferrer">
           <img src={assetSrc} alt="" className={animate} />
-        </Link>
+        </a>
       </div>
     </ProjectCard>
   )

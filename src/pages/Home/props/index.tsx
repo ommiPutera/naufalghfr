@@ -4,7 +4,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/kenari-apps.jpg',
     title: 'Kenari Apps',
-    to: '/project/kenari-apps',
+    to: 'https://naufalghfr.notion.site/Designing-a-Close-loop-Digital-Product-for-Company-or-Community-c16b00d78f534cf6b8c0860523a2f3ae',
     desc: (
       <span>
         Designing mobile apps for various <br /> kinds of “Koperasi” needs
@@ -17,7 +17,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/ruang-alternative.jpg',
     title: 'Ruang Alternative',
-    to: '/project/ruang-alternative',
+    to: 'https://naufalghfr.notion.site/Designing-a-Company-Profile-Website-for-Digital-Agencies-51f1dee7cb4945948b820bb2b85c4f20',
     desc: (
       <span>
         Designing a company profile website <br /> for Digital Agencies
@@ -30,7 +30,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/mental-health-case-study.jpg',
     title: 'Mental health Case Study',
-    to: '/project/mental-health-case-study',
+    to: 'https://naufalghfr.notion.site/Designing-an-Apps-to-Help-Educate-Users-About-The-Importance-of-Mental-Health-e6203125f0594f12bb9c4d0b3ced6258',
     desc: (
       <span>
         Designing an Apps to help educate <br /> users about the importance of
@@ -45,7 +45,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/kenari-admin-site.jpg',
     title: 'Kenari Admin Site',
-    to: '/project',
+    to: 'https://naufalghfr.notion.site/Designing-an-Admin-Site-Dashboard-for-Kenari-Apps-638929677483419c83edae80df19e040',
     desc: (
       <span>
         Designing an back-end system for the <br /> Kenari Apps

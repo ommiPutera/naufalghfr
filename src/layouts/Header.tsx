@@ -30,10 +30,16 @@ function Header() {
           </DesktopNav>
         </CenterContent>
         <RightContent>
-          <Button size="sm" variant="default" className="btn-contact">
-            Let's talk!
-            <PenIcon />
-          </Button>
+          <a
+            href="mailto:muhammadnaufalghfr@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button size="sm" variant="default" className="btn-contact">
+              Let's talk!
+              <PenIcon />
+            </Button>
+          </a>
           <NavButton />
         </RightContent>
       </Container>

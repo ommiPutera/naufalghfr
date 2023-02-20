@@ -33,7 +33,13 @@ function IntroSection() {
           </span>
         </Text>
         <div className="link__resume">
-          <a href="/">Link to my Resume</a>
+          <a
+            href="https://drive.google.com/file/d/14V6j7pOd6OKQLc1iYUEI35s837B7zuC5/view"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Link to my Resume
+          </a>
           <ArrowTopRightIcon />
         </div>
       </div>

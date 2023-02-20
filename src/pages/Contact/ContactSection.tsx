@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import {ArrowTopRightIcon} from '../../utils/icons'
 
@@ -7,22 +6,32 @@ function ContactSection() {
     <Wrapper className="mt-110 mobile__mt-42" id="contact-section">
       <div className="order__1">
         <div>
-          <Link to="/" className="wrapper__">
+          <a
+            href="https://wa.me/+6281219603026"
+            target="_blank"
+            className="wrapper__"
+            rel="noreferrer"
+          >
             <div>
               <ArrowTopRightIcon />
             </div>
             <p>
               Whatsapp <br /> Me
             </p>
-          </Link>
-          <Link to="/" className="wrapper__ outline__">
+          </a>
+          <a
+            href="mailto:muhammadnaufalghfr@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            className="wrapper__ outline__"
+          >
             <div>
               <ArrowTopRightIcon />
             </div>
             <p>
               Grab Me <br /> An Email
             </p>
-          </Link>
+          </a>
         </div>
         <div>
           <p>MY LOCATION</p>

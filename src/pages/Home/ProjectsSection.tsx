@@ -91,18 +91,14 @@ function ProjectCardItem({
       <div className={clsx(layout === '1' ? 'left__' : 'right__', 'title__')}>
         <div className={animate}>
           <div>
-            <Link
-              to={to}
-              className="text__"
-              onClick={() => window.scrollTo(0, 0)}
-            >
+            <a href={to} target="_blank" className="text__" rel="noreferrer">
               <Title className="font-32 font-600 mobile__font-28">
                 {title}
               </Title>
               <div className="icon__">
                 <ArrowTopRightIcon />
               </div>
-            </Link>
+            </a>
           </div>
           <Text
             size="lg"
@@ -121,9 +117,9 @@ function ProjectCardItem({
         </div>
       </div>
       <div className={clsx(layout === '1' ? 'right__' : 'left__', 'preview__')}>
-        <Link to={to} onClick={() => window.scrollTo(0, 0)}>
+        <a href={to} target="_blank" rel="noreferrer">
           <img src={assetSrc} alt="" className={animate} />
-        </Link>
+        </a>
       </div>
     </ProjectCard>
   )

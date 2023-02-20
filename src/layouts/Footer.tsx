@@ -12,19 +12,19 @@ function Footer() {
         <div className="top">
           <SocialItem
             logoUrl="/assets/logo/twitter.svg"
-            to="https://twitter.com/"
-          />
-          <SocialItem
-            logoUrl="/assets/logo/facebook.svg"
-            to="https://twitter.com/"
+            to="https://twitter.com/naufalghfrrr"
           />
           <SocialItem
             logoUrl="/assets/logo/instagram.svg"
-            to="https://twitter.com/"
+            to="https://www.instagram.com/naufalghfr/"
           />
           <SocialItem
-            logoUrl="/assets/logo/github.svg"
-            to="https://twitter.com/"
+            logoUrl="/assets/logo/linkedin.svg"
+            to="https://www.linkedin.com/in/naufalghfr/"
+          />
+          <SocialItem
+            logoUrl="/assets/logo/dribble.svg"
+            to="https://dribbble.com/naufalghfr/"
           />
         </div>
         <Divider size="xs" />
