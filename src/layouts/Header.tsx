@@ -10,10 +10,11 @@ import {PenIcon} from '../utils/icons'
 import {LeftContent, CenterContent, RightContent, growDown} from './styled'
 
 function Header() {
-  const {logoColor} = useThemeColorStore(state => state)
+  const { logoColor } = useThemeColorStore(state => state)
+  const {isOpen} = useNavigation()
   const {pathname} = useLocation()
   return (
-    <WrapperHeader>
+    <WrapperHeader style={{background: isOpen ? '#1D1D1D' : ''}}>
       <Container size={HEADER_SIZE} className="p-0">
         <LeftContent className="align-center">
           <Logo>

@@ -37,7 +37,7 @@ function DropdownNav() {
 
   return (
     <WrapperDropdownNav className={`${isOpen ? 'open' : 'closed'}`}>
-      <RouteArray handleClick={handleClick} withCloseBtn={true} />
+      <RouteArray handleClick={handleClick} />
     </WrapperDropdownNav>
   )
 }
@@ -59,14 +59,6 @@ function RouteArray({handleClick, withCloseBtn}: IRouteArray) {
           </li>
         </Link>
       ))}
-      {withCloseBtn && (
-        <Link to={pathname}>
-          <li onClick={handleClick} className="close__btn">
-            Back to content
-            <div />
-          </li>
-        </Link>
-      )}
     </ul>
   )
 }

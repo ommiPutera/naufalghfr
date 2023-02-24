@@ -78,12 +78,13 @@ export const RightContent = styled.div`
 `
 export const WrapperDropdownNav = styled.nav`
   width: 100%;
-  height: max-content;
+  height: 100vh;
   max-height: 100vh;
   position: absolute;
   z-index: 9999;
   background: #1d1d1d;
   color: #fff;
+  padding-top: 42px;
 
   &.open {
     display: block;
@@ -99,11 +100,26 @@ export const WrapperDropdownNav = styled.nav`
     transform-origin: top center;
 
     li {
-      padding: 32px 16px;
+      position: relative;
+      padding: 22px 16px;
       text-align: center;
       font-size: 14px;
       font-weight: 500;
       text-decoration: none;
+
+      div {
+        width: 0;
+        height: 4px;
+        margin: 3px auto 0 auto;
+      }
+      &.match {
+        color: #ffff;
+
+        div {
+          width: 67px;
+          background: ${({theme: {colors}}) => colors.primary[0]};
+        }
+      }
     }
   }
   .close__btn {
