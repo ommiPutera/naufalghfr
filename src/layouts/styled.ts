@@ -80,6 +80,12 @@ export const RightContent = styled.div`
     .btn-contact {
       display: flex;
       align-items: center;
+      .mantine-Button-root {
+        padding: 0 28px;
+        width: 100%;
+        margin-right: 12px;
+        border-radius: 100px;
+      }
       label {
         display: block;
       }
