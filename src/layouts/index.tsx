@@ -1,5 +1,6 @@
 import {Container} from '@mantine/core'
 import clsx from 'clsx'
+import {Helmet} from 'react-helmet'
 import {Link, Outlet, useLocation} from 'react-router-dom'
 import {CONTAINER_SIZE} from '../defaultVariable'
 import {ROUTES} from '../routes'
@@ -36,9 +37,14 @@ function DropdownNav() {
   }
 
   return (
-    <WrapperDropdownNav className={`${isOpen ? 'open' : 'closed'}`}>
-      <RouteArray handleClick={handleClick} />
-    </WrapperDropdownNav>
+    <>
+      <Helmet>
+        <meta name="theme-color" content={isOpen ? '#1D1D1D' : '#fff'} />
+      </Helmet>
+      <WrapperDropdownNav className={`${isOpen ? 'open' : 'closed'}`}>
+        <RouteArray handleClick={handleClick} />
+      </WrapperDropdownNav>
+    </>
   )
 }
 
