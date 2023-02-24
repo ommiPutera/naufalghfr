@@ -37,7 +37,7 @@ function Header() {
             rel="noreferrer"
           >
             <Button size="sm" variant="default" className="btn-contact">
-              Let's talk!
+              <label>Let's talk!</label>
               <PenIcon />
             </Button>
           </a>
@@ -78,7 +78,7 @@ const NavIcon = styled.div`
   background: transparent;
   border: 1.5px solid #fff;
   border-radius: 50%;
-  margin-top: -6px;
+  margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;

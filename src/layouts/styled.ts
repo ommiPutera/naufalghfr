@@ -61,7 +61,18 @@ export const RightContent = styled.div`
   justify-content: end;
 
   .btn-contact {
-    display: none;
+    .mantine-Button-root {
+      padding: 0px;
+      width: 50px;
+      height: 50px;
+      margin-right: 12px;
+      border-radius: 100px;
+    }
+    label {
+      display: none;
+    }
+    svg {
+    }
   }
 
   @media (min-width: 1200px) {
@@ -69,6 +80,9 @@ export const RightContent = styled.div`
     .btn-contact {
       display: flex;
       align-items: center;
+      label {
+        display: block;
+      }
 
       svg {
         margin-left: 15px;
