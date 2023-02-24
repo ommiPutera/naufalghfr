@@ -10,7 +10,7 @@ import {PenIcon} from '../utils/icons'
 import {LeftContent, CenterContent, RightContent, growDown} from './styled'
 
 function Header() {
-  const { logoColor } = useThemeColorStore(state => state)
+  const {logoColor} = useThemeColorStore(state => state)
   const {isOpen} = useNavigation()
   const {pathname} = useLocation()
   return (
@@ -61,6 +61,7 @@ function HamburgerIcon() {
   return (
     <NavIcon>
       <input
+        checked={isOpen}
         onClick={() => setIsOpen(!isOpen)}
         type="checkbox"
         id="menu_checkbox"

@@ -96,14 +96,13 @@ export const WrapperDropdownNav = styled.nav`
   ul {
     width: 100%;
     overflow: scroll;
-    animation: ${growDown} 400ms linear;
     transform-origin: top center;
 
     li {
       position: relative;
-      padding: 22px 16px;
+      padding: 20px 16px;
       text-align: center;
-      font-size: 14px;
+      font-size: 17px;
       font-weight: 500;
       text-decoration: none;
 
