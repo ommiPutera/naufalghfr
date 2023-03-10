@@ -87,7 +87,7 @@ function ProjectCardItem({
   return (
     <ProjectCard className="project__card mobile__mt-26">
       <div className={clsx(layout === '1' ? 'left__' : 'right__', 'title__')}>
-        <div className={animate}>
+        <div>
           <div>
             <a href={to} className="text__" target="_blank" rel="noreferrer">
               <Title className="font-32 font-600 mobile__font-28">

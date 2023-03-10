@@ -50,7 +50,7 @@ const WrapperTitleSection = styled.div`
   margin-top: 42px;
 
   @media (min-width: 1200px) {
-    margin-top: 120px;
+    /* margin-top: 120px; */
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;

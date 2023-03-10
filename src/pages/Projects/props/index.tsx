@@ -27,7 +27,7 @@ const propsContentProjects: CardItemTypes[] = [
       </span>
     ),
     types: 'Interface & Website',
-    animate: 'basic-animate-3',
+    animate: 'basic-animate',
     layout: '2',
   },
   {
@@ -53,7 +53,7 @@ const propsContentProjects: CardItemTypes[] = [
       </span>
     ),
     types: 'Interface & Website',
-    animate: 'basic-animate-3',
+    animate: 'basic-animate',
     layout: '2',
   },
 ]

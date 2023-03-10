@@ -10,25 +10,25 @@ function HeroSection() {
     <WrapperHero className="mobile__mt-42">
       <div className="page__title">
         <div className="title__">
-          <Title order={1} className="font-130 mobile__font-60 basic-animate">
+          <Title order={1} className="font-130 mobile__font-60">
             MY PAST
           </Title>
           <TextOutline
             size="130"
             strokeColor="white"
-            className="font-130 mobile__font-60 basic-animate"
+            className="font-130 mobile__font-60"
           >
             PROJECTS
           </TextOutline>
         </div>
-        <div className="basic-animate-2">
+        <div>
           <Title className="mobile__mt-52 font-700 font-16 mobile__font-12 section__highlight">
             ONLY BEST PROJECTS SELECTION
             <div />
           </Title>
         </div>
       </div>
-      <ScrollDown className="mobile__mt-52 basic-animate-3">
+      <ScrollDown className="mobile__mt-52">
         <LinkScroll
           activeClass="active"
           to="projects-section"
@@ -72,6 +72,8 @@ const WrapperHero = styled.div`
     justify-content: flex-start;
     text-align: center;
     height: 100%;
+    min-height: 638px;
+    max-height: 638px;
     margin-top: 80px;
 
     h1 {

@@ -62,6 +62,7 @@ function HamburgerIcon() {
     <NavIcon>
       <input
         checked={isOpen}
+        onChange={() => {}}
         onClick={() => setIsOpen(!isOpen)}
         type="checkbox"
         id="menu_checkbox"
@@ -105,8 +106,8 @@ const NavIcon = styled.div`
     top: -2px;
     height: 1.5px;
     background-color: #fff;
-    transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
-      0.3s ease right;
+    transition: 0.15s ease transform, 0.15s ease top, 0.15s ease width,
+      0.15s ease right;
   }
 
   label div:first-child {

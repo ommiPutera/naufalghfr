@@ -14,7 +14,7 @@ const certifiedLogoAssetsUrl = [
 
 function HeroSection() {
   return (
-    <WrapperHero className="mobile__mt-62">
+    <WrapperHero className="mt-32 mobile__mt-62">
       <Title order={1} className="mobile__font-70 basic-animate">
         DIGITAL PRODUCT
       </Title>
@@ -50,7 +50,7 @@ function HeroSection() {
           ))}
         </Container>
       </Certified>
-      <ScrollDown className="mobile__mt-52 basic-animate-3">
+      <ScrollDown className="mt-62 mobile__mt-52 basic-animate-3">
         <LinkScroll
           activeClass="active"
           to="projects"
@@ -73,8 +73,9 @@ const WrapperHero = styled.div`
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  margin: 36px 0 58px 0;
   color: ${({theme: {colors}}) => colors.light[0]};
+  min-height: 700px;
+  max-height: 700px;
 
   h1 {
     line-height: 60px;
@@ -84,8 +85,8 @@ const WrapperHero = styled.div`
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100%;
-    margin: 102px 0 62px 0;
+    min-height: 758px;
+    max-height: 758px;
 
     h1 {
       line-height: 115px;
