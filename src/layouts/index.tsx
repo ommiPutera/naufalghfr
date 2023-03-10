@@ -39,7 +39,7 @@ function DropdownNav() {
   return (
     <>
       <Helmet>
-        <meta name="theme-color" content={isOpen ? '#1D1D1D' : '#fff'} />
+        <meta name="theme-color" content={!isOpen ? '#1D1D1D' : '#fff'} />
       </Helmet>
       <WrapperDropdownNav className={`${isOpen ? 'open' : 'closed'}`}>
         <RouteArray handleClick={handleClick} />

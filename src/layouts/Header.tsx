@@ -58,17 +58,7 @@ function NavButton() {
 }
 
 function HamburgerIcon() {
-  const {setThemeColor} = useThemeColorStore(state => state)
   const {isOpen, setIsOpen} = useNavigation()
-
-  React.useEffect(() => {
-    if (isOpen) {
-      setThemeColor('#1D1D1D')
-    } else {
-      setThemeColor('#fff')
-    }
-  }, [isOpen, setThemeColor])
-
   return (
     <NavIcon>
       <input
