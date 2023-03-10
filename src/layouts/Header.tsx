@@ -1,4 +1,5 @@
 import {Container} from '@mantine/core'
+import React from 'react'
 import {Link, useLocation} from 'react-router-dom'
 import styled from 'styled-components'
 import {RouteArray} from '.'
@@ -57,7 +58,17 @@ function NavButton() {
 }
 
 function HamburgerIcon() {
+  const {setThemeColor} = useThemeColorStore(state => state)
   const {isOpen, setIsOpen} = useNavigation()
+
+  React.useEffect(() => {
+    if (isOpen) {
+      setThemeColor('#1D1D1D')
+    } else {
+      setThemeColor('#fff')
+    }
+  }, [isOpen, setThemeColor])
+
   return (
     <NavIcon>
       <input
