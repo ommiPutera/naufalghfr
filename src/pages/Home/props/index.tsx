@@ -45,7 +45,7 @@ const propsContentProjects: CardItemTypes[] = [
   {
     assetSrc: '/assets/image/previewProjects/kenari-admin-site.jpg',
     title: 'Kenari Admin Site',
-    to: 'https://naufalghfr.notion.site/Designing-an-Admin-Site-Dashboard-for-Kenari-Apps-638929677483419c83edae80df19e040',
+    to: 'www.google.com',
     desc: (
       <span>
         Designing an back-end system for the <br /> Kenari Apps
